@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+        android:title="@string/setting_menu_kand_title_adv_network">
+        <CheckBoxPreference
+            android:key="host_proxy_enable"
+            android:defaultValue="false"
+            android:title="@string/setting_menu_kand_title_host_proxy_enable" />
+        <EditTextPreference
+            android:key="host_proxy_address"
+            android:dependency="host_proxy_enable"
+            android:defaultValue="167.179.91.86"
+            android:title="@string/setting_menu_kand_title_host_proxy_address" />
+</PreferenceScreen>

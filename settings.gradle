@@ -1,0 +1,5 @@
+include ':libv2ray'
+include ':v2rayNG'
+include ':dpreference'
+include ':app'
+rootProject.name = "My Application"
