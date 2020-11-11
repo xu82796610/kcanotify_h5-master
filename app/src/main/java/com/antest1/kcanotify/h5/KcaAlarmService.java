@@ -140,7 +140,11 @@ public class KcaAlarmService extends Service {
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
         createAlarmChannel();
+<<<<<<< HEAD
         Log.e("KCA", "KcaAlarmService Called: " + startId);
+=======
+        Log.e("KCA", "KcaAlarmService Called: " + String.valueOf(startId));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         if (intent != null && intent.getAction() != null) {
             String action = intent.getAction();
             Log.e("KCA-N", "Action: ".concat(action));
@@ -242,7 +246,11 @@ public class KcaAlarmService extends Service {
                 }
             }
         }
+<<<<<<< HEAD
         Log.e("KCA", "Noti Count: " + alarm_set.size());
+=======
+        Log.e("KCA", "Noti Count: " + String.valueOf(alarm_set.size()));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         if (sHandler != null) {
             bundle = new Bundle();
             bundle.putString("url", KCA_API_PREF_NOTICOUNT_CHANGED);
@@ -465,7 +473,11 @@ public class KcaAlarmService extends Service {
         String content = version;
 
         Bitmap updateBitmap = KcaUtils.decodeSampledBitmapFromResource(getResources(),
+<<<<<<< HEAD
                 getId("ic_update_" + type, R.mipmap.class), NOTI_ICON_SIZE, NOTI_ICON_SIZE);
+=======
+                getId("ic_update_" + String.valueOf(type), R.mipmap.class), NOTI_ICON_SIZE, NOTI_ICON_SIZE);
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         NotificationCompat.Builder builder = createBuilder(getApplicationContext(), alarmChannelList.peek())
                 .setSmallIcon(R.mipmap.ic_stat_notify_1)
                 .setLargeIcon(updateBitmap)

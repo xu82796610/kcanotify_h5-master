@@ -503,7 +503,11 @@ public class KcaBattleViewService extends Service {
                             }
 
 
+<<<<<<< HEAD
                             Log.e("KCA", "FSD: " + friendShipData.size());
+=======
+                            Log.e("KCA", "FSD: " + String.valueOf(friendShipData.size()));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
                         } else if (i == 1) {
                             JsonObject combinedDeckData = deckData.get(i).getAsJsonObject();
@@ -578,7 +582,11 @@ public class KcaBattleViewService extends Service {
                                 }
                             }
 
+<<<<<<< HEAD
                             Log.e("KCA", "FCSD: " + friendCombinedShipData.size());
+=======
+                            Log.e("KCA", "FCSD: " + String.valueOf(friendCombinedShipData.size()));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                         }
                     }
                 }
@@ -625,7 +633,11 @@ public class KcaBattleViewService extends Service {
                     itemdata.add("api_slot", eSlot.get(i));
                     enemyShipData.add(itemdata);
                 }
+<<<<<<< HEAD
                 Log.e("KCA", "ESD: " + enemyShipData.size());
+=======
+                Log.e("KCA", "ESD: " + String.valueOf(enemyShipData.size()));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                 boolean start_flag = checkStart(api_data.get("api_url").getAsString());
                 if (start_flag) { // day/sp_night Battle Process
                     api_formation = api_data.getAsJsonArray("api_formation");
@@ -824,7 +836,11 @@ public class KcaBattleViewService extends Service {
                         itemdata.add("api_slot", eSlotCombined.get(i));
                         enemyCombinedShipData.add(itemdata);
                     }
+<<<<<<< HEAD
                     Log.e("KCA", "ECSD: " + enemyCombinedShipData.size());
+=======
+                    Log.e("KCA", "ECSD: " + String.valueOf(enemyCombinedShipData.size()));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     JsonArray api_ship_ke_combined = api_data.getAsJsonArray("api_ship_ke_combined");
                     for (int i = 0; i < api_ship_ke_combined.size(); i++) {
                         ((TextView) battleview.findViewById(getId(KcaUtils.format("es_%d_name", i + 1), R.id.class))).setTextSize(TypedValue.COMPLEX_UNIT_PX, textsize_c_large);
@@ -1086,7 +1102,11 @@ public class KcaBattleViewService extends Service {
         LinearLayout friend_combined_fleet = battleview.findViewById(R.id.friend_combined_fleet);
         LinearLayout enemy_main_fleet = battleview.findViewById(R.id.enemy_main_fleet);
         LinearLayout enemy_combined_fleet = battleview.findViewById(R.id.enemy_combined_fleet);
+<<<<<<< HEAD
         Log.e("KCA", fc_flag + "-" + ec_flag);
+=======
+        Log.e("KCA", String.valueOf(fc_flag) + "-" + String.valueOf(ec_flag));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
         friend_combined_fleet.setVisibility(fc_flag ? View.VISIBLE : View.GONE);
         enemy_combined_fleet.setVisibility(ec_flag ? View.VISIBLE : View.GONE);
@@ -1163,7 +1183,11 @@ public class KcaBattleViewService extends Service {
                 int lv = 0;
                 int alv = -1;
                 if (onslot != null) {
+<<<<<<< HEAD
                     Log.e("KCA", "item_id: " + item_id);
+=======
+                    Log.e("KCA", "item_id: " + String.valueOf(item_id));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     kcItemData = getUserItemStatusById(item_id, "level,alv", "type,name");
                     if (kcItemData == null) continue;
                     Log.e("KCA", kcItemData.toString());
@@ -1194,7 +1218,11 @@ public class KcaBattleViewService extends Service {
                     int itemtype = kcItemData.getAsJsonArray("type").get(2).getAsInt();
                     if (isItemAircraft(itemtype)) {
                         onslot_count += 1;
+<<<<<<< HEAD
                         Log.e("KCA", "ID: " + itemtype);
+=======
+                        Log.e("KCA", "ID: " + String.valueOf(itemtype));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                         int nowSlotValue = onslot.get(i).getAsInt();
                         int maxSlotValue = maxslot.get(i).getAsInt();
                         ((TextView) itemView.findViewById(getId(KcaUtils.format("item%d_slot", i + 1), R.id.class)))
@@ -1758,7 +1786,11 @@ public class KcaBattleViewService extends Service {
         display.getSize(size);
         screenWidth = size.x;
         screenHeight = size.y;
+<<<<<<< HEAD
         Log.e("KCA", "w/h: " + screenWidth + " " + screenHeight);
+=======
+        Log.e("KCA", "w/h: " + String.valueOf(screenWidth) + " " + String.valueOf(screenHeight));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
         acViewParams.x = (screenWidth - popupWidth) / 2;
         acViewParams.y = (screenHeight - popupHeight) / 2;
@@ -2030,6 +2062,11 @@ public class KcaBattleViewService extends Service {
         if (url.equals(API_REQ_SORTIE_BATTLE_MIDNIGHT)) return false;
         if (url.equals(API_REQ_PRACTICE_MIDNIGHT_BATTLE)) return false;
         if (url.equals(API_REQ_COMBINED_BATTLE_MIDNIGHT)) return false;
+<<<<<<< HEAD
         return !url.equals(API_REQ_COMBINED_BATTLE_MIDNIGHT_EC);
+=======
+        if (url.equals(API_REQ_COMBINED_BATTLE_MIDNIGHT_EC)) return false;
+        return true;
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     }
 }

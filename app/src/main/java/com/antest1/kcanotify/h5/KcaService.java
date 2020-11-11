@@ -693,7 +693,11 @@ public class KcaService extends Service {
 
                     setPreferences(getApplicationContext(), PREF_KCA_VERSION, kca_version);
                     if (!getStringPreferences(getApplicationContext(), PREF_KCA_DATA_VERSION).equals(kca_version)) {
+<<<<<<< HEAD
                         makeToast("new game data detected: " + kca_version, Toast.LENGTH_LONG,
+=======
+                        makeToast("new game data detected: " + String.valueOf(kca_version), Toast.LENGTH_LONG,
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                                 ContextCompat.getColor(getApplicationContext(), R.color.colorPrimaryDark));
                     }
                 }
@@ -755,7 +759,11 @@ public class KcaService extends Service {
                     dbHelper.putValue(DB_KEY_KDOCKDATA, requiredInfoApiData.getAsJsonArray("api_kdock").toString());
                     JsonArray slotitem_data = requiredInfoApiData.getAsJsonArray("api_slot_item");
                     int size2 = KcaApiData.putSlotItemDataToDB(slotitem_data);
+<<<<<<< HEAD
                     Log.e("KCA", "Total Items: " + size2);
+=======
+                    Log.e("KCA", "Total Items: " + String.valueOf(size2));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     if (size2 > 0) restartFlag = false;
                 }
                 return;
@@ -991,7 +999,11 @@ public class KcaService extends Service {
                         break;
                     }
                 }
+<<<<<<< HEAD
                 Log.e("KCA", "clear " + quest_id);
+=======
+                Log.e("KCA", "clear " + String.valueOf(quest_id));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                 dbHelper.removeQuest(quest_id);
                 questTracker.removeQuestTrack(quest_id, true);
                 if (quest_id == 212 || quest_id == 218) questTracker.clearApDupFlag();
@@ -1963,7 +1975,11 @@ public class KcaService extends Service {
                             isCombined = (api_combined > 0);
                             KcaBattle.isCombined = api_combined > 0;
                         }
+<<<<<<< HEAD
                         Log.e("KCA", "Combined: " + isCombined);
+=======
+                        Log.e("KCA", "Combined: " + String.valueOf(isCombined));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                         updateFleetView();
                     }
 
@@ -2342,7 +2358,11 @@ public class KcaService extends Service {
             }
 
             if (url.startsWith(KCA_API_NOTI_BATTLE_DROPINFO)) {
+<<<<<<< HEAD
                 Log.e("KCA", KCA_API_NOTI_BATTLE_DROPINFO + " " + isOpenDBEnabled());
+=======
+                Log.e("KCA", KCA_API_NOTI_BATTLE_DROPINFO + " " + String.valueOf(isOpenDBEnabled()));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                 int world = jsonDataObj.get("world").getAsInt();
                 int map = jsonDataObj.get("map").getAsInt();
                 int node = jsonDataObj.get("node").getAsInt();
@@ -2711,7 +2731,11 @@ public class KcaService extends Service {
         } else {
             alarmManager.set(AlarmManager.RTC_WAKEUP, time, alarmIntent);
         }
+<<<<<<< HEAD
         Log.e("KCA", "Alarm set to: " + time + " " + code);
+=======
+        Log.e("KCA", "Alarm set to: " + String.valueOf(time) + " " + String.valueOf(code));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     }
 
     public void updateQuestView() {

@@ -98,7 +98,13 @@ public class KcaVpnData {
                         portToResponseHeaderPart.put(sport, "");
                         portToGzipped.put(sport, false);
                         portToLength.put(sport, 0);
+<<<<<<< HEAD
                         ignoreResponseList.remove(sport);
+=======
+                        if (ignoreResponseList.contains(sport)) {
+                            ignoreResponseList.remove(sport);
+                        }
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     } else {
                         //KcaHandler k = new KcaHandler(handler, KCA_API_RESOURCE_URL, (requestUri + " " + sport).getBytes(), new byte[]{});
                         //executorService.execute(k);
@@ -127,7 +133,11 @@ public class KcaVpnData {
                         for (String line : headers) {
                             if (line.startsWith("Content-Encoding: ")) {
                                 portToGzipped.put(tport, line.contains("gzip"));
+<<<<<<< HEAD
                                 Log.e("KCA", tport + " gzip " + portToGzipped.get(tport));
+=======
+                                Log.e("KCA", String.valueOf(tport) + " gzip " + portToGzipped.get(tport));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                             } else if (line.startsWith("Transfer-Encoding")) {
                                 if (line.contains("chunked")) {
                                     portToLength.put(tport, -1);

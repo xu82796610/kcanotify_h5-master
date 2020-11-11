@@ -113,7 +113,11 @@ public class KcaQuestViewService extends Service {
 
     public int setView(boolean isquestlist, boolean checkValid, int tab_id, int filter_id) {
         try {
+<<<<<<< HEAD
             Log.e("KCA", "QuestView setView " + isquestlist);
+=======
+            Log.e("KCA", "QuestView setView " + String.valueOf(isquestlist));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
             error_flag = false;
 
             int api_count = 0;

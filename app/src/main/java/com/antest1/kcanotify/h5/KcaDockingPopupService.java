@@ -136,7 +136,11 @@ public class KcaDockingPopupService extends Service {
             display.getSize(size);
             screenWidth = size.x;
             screenHeight = size.y;
+<<<<<<< HEAD
             Log.e("KCA", "w/h: " + screenWidth + " " + screenHeight);
+=======
+            Log.e("KCA", "w/h: " + String.valueOf(screenWidth) + " " + String.valueOf(screenHeight));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
             mParams.x = (screenWidth - popupWidth) / 2;
             mParams.y = (screenHeight - popupHeight) / 2;
@@ -392,7 +396,11 @@ public class KcaDockingPopupService extends Service {
         display.getSize(size);
         screenWidth = size.x;
         screenHeight = size.y;
+<<<<<<< HEAD
         Log.e("KCA", "w/h: " + screenWidth + " " + screenHeight);
+=======
+        Log.e("KCA", "w/h: " + String.valueOf(screenWidth) + " " + String.valueOf(screenHeight));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
         if (mParams != null) {
             if (mParams.x < 0) mParams.x = 0;

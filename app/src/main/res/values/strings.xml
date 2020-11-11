@@ -7,6 +7,10 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
 -->
 
 <resources>
+<<<<<<< HEAD
+=======
+    <string name="locale_code">en-US</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <!-- Application Information -->
     <string name="app_name">Kcanotify</string>
@@ -20,11 +24,23 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="action_downloadall">DL ALL</string>
     <string name="action_inspector" translatable="false">Inspector</string>
     <string name="app_vpn_name">Kcanotify Sniffer</string>
+<<<<<<< HEAD
 
     <string name="backpress_msg">Press back one more time to exit</string>
     <string name="notification_appinfo_title">Kcanotify Notification</string>
     <string name="default_gamedata_version" translatable="false">4.5.6.0</string>
 
+=======
+    <string name="app_name_kancolle">KanColle Android (Official)</string>
+    <string name="app_name_gotobrowser">GotoBrowser</string>
+
+    <string name="backpress_msg">Press back one more time to exit</string>
+    <string name="notification_appinfo_title">Kcanotify Notification</string>
+    <string name="developer_email" translatable="false">kcanotify@gmail.com</string>
+    <string name="default_gamedata_version" translatable="false">4.5.6.0</string>
+
+    <string name="app_download_link_playstore_label" translatable="false">Google Play Store</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="app_download_link_googledrive_label" translatable="false">Google Drive</string>
     <string name="app_download_link_mega_label" translatable="false">MEGA</string>
     <string name="app_download_link_baidu_label" translatable="false">百度云 (密码: c2in)</string>
@@ -34,18 +50,37 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="app_download_link_playstore" translatable="false">market://details?id=com.antest1.kcanotify</string>
     <string name="app_download_link_baidu" translatable="false">http://pan.baidu.com/s/1i5f37Rv</string>
     <string name="app_download_link_kcwiki" translatable="false">https://mirrors.kcwiki.org/kcanotify/</string>
+<<<<<<< HEAD
+=======
+    <string name="app_kcaqsync_link" translatable="false">http://kcaqsync.swaytwig.com</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <!-- Link Information -->
     <string name="server_swaytwig" translatable="false">http://swaytwig.com/</string>
     <string name="server_nova" translatable="false">https://nh7l0ukr44.execute-api.us-east-1.amazonaws.com/</string>
     <string name="server_liza" translatable="false">http://18.176.189.52/</string>
+<<<<<<< HEAD
+=======
+    <string name="kcanotify_checkversion_link" translatable="false" formatted="false">kcanotify/v.php</string>
+    <string name="api_start2_recent_version_link" translatable="false" formatted="false">kcanotify/kca_api_start2.php?v=recent</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <!-- Common Text -->
     <string name="dialog_ok">OK</string>
     <string name="dialog_cancel">Cancel</string>
 
+<<<<<<< HEAD
     <string name="heavy_damaged">A ship is heavily damaged!</string>
     <string name="heavy_damaged_damecon">A ship is heavily damaged! (Damecon available)</string>
+=======
+    <string name="error_text">An error occurred. Please contact the developer.</string>
+    <string name="questview_prev" translatable="false">PREV</string>
+    <string name="questview_next" translatable="false">NEXT</string>
+
+    <string name="heavy_damaged">A ship is heavily damaged!</string>
+    <string name="heavy_damaged_damecon">A ship is heavily damaged! (Damecon available)</string>
+    <string name="goback_left">Press LEFT button to escort the ship.</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <string name="seek_type_0">Sum</string>
     <string name="seek_type_1">F33/1</string>
@@ -101,6 +136,7 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="node_info_selectable" formatted="false">%s (Node Selection)</string>
     <string name="node_info_sendan" formatted="false">%s (Large Resource Point)</string>
     <string name="node_info_ecbattle" formatted="false">%s (Enemy Combined)</string>
+<<<<<<< HEAD
     <string name="node_info_practice" formatted="false">PVP</string>
     <!-- MainActivity Strings -->
     <string name="ma_svc_toggleon">Service On</string>
@@ -109,15 +145,42 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="ma_toast_overay_diabled">Screen Overlay Permission is required for BattleView. Enable Screen Overlay at Settings > Screen Overlay Settings.</string>
     <string name="ma_hasupdate" formatted="false">An update is available. (%s)</string>
     <string name="ma_hasdataupdate" formatted="false">New game data is available. (%s)</string>
+=======
+    <string name="node_info_anchorage" formatted="false">%s (Anchorage Repair)</string>
+    <string name="node_info_practice" formatted="false">PVP</string>
+    <!-- MainActivity Strings -->
+    <string name="ma_vpn_toggleon">Sniffer On</string>
+    <string name="ma_vpn_toggleoff">Sniffer Off</string>
+    <string name="ma_svc_toggleon">Service On</string>
+    <string name="ma_svc_toggleoff">Service Off</string>
+    <string name="ma_toast_kancolle_not_installed">Kancolle For Android is not installed.</string>
+    <string name="ma_toast_gotobrowser_not_installed">GotoBrowser is not installed.</string>
+    <string name="ma_toast_overay_diabled">Screen Overlay Permission is required for BattleView. Enable Screen Overlay at Settings > Screen Overlay Settings.</string>
+    <string name="ma_hasupdate" formatted="false">An update is available. (%s)</string>
+    <string name="ma_hasdataupdate" formatted="false">New game data is available. (%s)</string>
+    <string name="ma_nextmaintenance" formatted="false">Next Maintenance:\n%s</string>
+    <string name="ma_endmaintenance" formatted="false">Maintenance End Time:\n%s</string>
+    <string name="description"><b>Help</b>\nTurn on VPN and SVC then run Kancolle\n\n※ VPN is required for detecting game data. \n\n<b>Main Features</b>\n - Expedition/Docking notifications \n - Heavy Damage Alert (prior to/during combat)\n - LoS/FP/Fatigue indicators\n - Node tracking during sorties\n - BattleView / QuestView\n - Improvement Arsenal Chart\n - Send statistics to OpenDB (optional)\n \nVisit http://swaytwig.com/kcanotify for detail. (Korean)</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <!-- SettingActivity Strings -->
     <string name="sa_checkupdate_latest" formatted="false">You have the latest version. (%s)</string>
     <string name="sa_checkupdate_hasupdate" formatted="false">An update is available. (%s)\nDo you wish to download it?</string>
     <string name="sa_checkupdate_dialogtitle">Check for updates.</string>
+<<<<<<< HEAD
     <string name="sa_checkupdate_servererror">Update server error.</string>
 
     <string name="sa_getupdate_finished">Game Data Download Completed</string>
     <string name="sa_getupdate_servererror" formatted="false">A Server Error Occurred: %s</string>
+=======
+    <string name="sa_checkupdate_nodataerror">There was a problem checking for updates.</string>
+    <string name="sa_checkupdate_servererror">Update server error.</string>
+
+    <string name="sa_getupdate_finished">Game Data Download Completed</string>
+    <string name="sa_getupdate_started">Downloading Game Data&#8230;</string>
+    <string name="sa_getupdate_servererror" formatted="false">A Server Error Occurred: %s</string>
+    <string name="sa_getupdate_ioexceptionerror">An error occurred while saving data.</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <string name="sa_overlay_under_m">This setting is not required for Android versions below 6.0.</string>
     <string name="sa_overlay_appearontop">In application manager, activate [Kcanotify] in "Draw over other apps"(Apps that can appear on top).</string>
@@ -129,6 +192,10 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="sa_usagestat_dialog_desc">In Android 5.0+, you should set this permission to use this feature. This permission is required for checking kancolle is on the screen.</string>
 
     <string name="sa_language_changed">Please restart kcanotify to apply new language setting.</string>
+<<<<<<< HEAD
+=======
+    <string name="sa_bypass_list_invalid">The bypass address list is invalid. Please double-check your input.</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <!-- InfoActivity Strings -->
     <string name="ia_license" formatted="false" translatable="false">Copyright &#169; 2016-%d by antest1(IE10)</string>
@@ -156,23 +223,50 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="kca_toast_airpower" formatted="false">FP: %d-%d</string>
     <string name="kca_toast_seekvalue_d" formatted="false">LoS(%s): %d</string>
     <string name="kca_toast_seekvalue_f" formatted="false">LoS(%s): %.2f</string>
+<<<<<<< HEAD
 
     <string name="kca_toast_restart_at_kcanotify">Please restart the game using kcanotify.</string>
+=======
+    <string name="kca_toast_tpvalue" formatted="false">TP: S%d/A%d</string>
+
+    <string name="kca_toast_restart_at_kcanotify">Please restart the game using kcanotify.</string>
+    <string name="kca_toast_renew_currentportdeck">Go to the main port(母港) in game and renew port data.</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="kca_toast_get_data_at_settings">Game data is not loaded completely.\\nIf the data is not loaded for long time, download game data using kcanotify Settings manually.</string>
     <string name="kca_toast_get_data_at_settings_2">A problem in game data was detected.\\\\nPlease download game data using kcanotify Settings manually.</string>
     <string name="kca_toast_loading_data">Loading game data</string>
     <string name="kca_toast_inconsistent_data">There is no data for current api version in kcanotify server.\nPlease restart the kcanotify later(about 10~20 min).</string>
+<<<<<<< HEAD
     <string name="kca_toast_server_select">Select server you want to play. (Hint: the higher the left, the better. recommend to avoid two bottom servers if available.)</string>
 
     <string name="kca_view_hdmg_damecon_format" formatted="false">[Heavily Damaged!! (with Damecon)] %s Working %s</string>
     <string name="kca_view_hdmg_format" formatted="false">[Heavliy Damaged!!] %s Working %s</string>
     <string name="kca_view_normal_format" formatted="false">%s Ready %s</string>
     <string name="kca_view_noexpedition">No expeditions are running.</string>
+=======
+    <string name="kca_toast_ioexceptionerror">An error occurred while writing to data cache.</string>
+    <string name="kca_toast_server_select">Select server you want to play. (Hint: the higher the left, the better. recommend to avoid two bottom servers if available.)</string>
+
+    <string name="kca_view_activate_vpn">Please Activate VPN Service.</string>
+    <string name="kca_view_condition" formatted="false">Morale: %s</string>
+    <string name="kca_view_condition_nformat" formatted="false">Morale #%d: %s</string>
+    <string name="kca_view_hdmg_damecon_format" formatted="false">[Heavily Damaged!! (with Damecon)] %s Working %s</string>
+    <string name="kca_view_hdmg_format" formatted="false">[Heavliy Damaged!!] %s Working %s</string>
+    <string name="kca_view_normal_format" formatted="false">%s Ready %s</string>
+    <string name="kca_view_context_expand">Swipe down to show content</string>
+    <string name="kca_view_noexpedition">No expeditions are running.</string>
+    <string name="kca_view_expedition_header">Time Remaining:</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <!-- Setting Strings -->
     <string name="setting_menu_kand_head">Kcanotify Settings</string>
     <string name="setting_menu_kand_title_language">Language Settings</string>
     <string name="setting_menu_kand_title_saku_cal">Select LoS formula</string>
+<<<<<<< HEAD
+=======
+    <string name="setting_menu_kand_title_kancolle_app">Select KanColle Application</string>
+    <string name="setting_menu_kand_title_sniffer_type">Sniffer Mode</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="setting_menu_kand_title_exp_realtime_show">Track Expedition Time</string>
     <string name="setting_menu_kand_desc_exp_realtime_show">Display remaining/left time for Expeditions on the navbar</string>
     <string name="setting_menu_kand_title_exp_type">Expedition Time View Type</string>
@@ -182,11 +276,31 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="setting_menu_kand_desc_game_data_down">Use if game data was not loaded automatically.</string>
     <string name="setting_menu_kand_title_fairy_select">Select fairy</string>
     <string name="setting_menu_kand_desc_fairy_select">Select fairy to bring with</string>
+<<<<<<< HEAD
     <string name="setting_menu_kand_title_fairy_auto_hide">Show Fairy only in Kancolle Screen</string>
     <string name="setting_menu_kand_desc_fairy_auto_hide">There is a delay in showing/hiding fairy.</string>
     <string name="action_fairy_rev">Reverse</string>
     <string name="current_fairy_changed_in_next">※ Fairy will be changed after current BattleView/QuestView ends.</string>
     <string name="setting_menu_kand_title_adv_network">Advanced Network Settings</string>
+=======
+    <string name="setting_menu_kand_title_fairy_size">Fairy size</string>
+    <string name="setting_menu_kand_title_fairy_random">Select fairy randomly</string>
+    <string name="setting_menu_kand_title_fairy_auto_hide">Show Fairy only in Kancolle Screen</string>
+    <string name="setting_menu_kand_desc_fairy_auto_hide">There is a delay in showing/hiding fairy.</string>
+    <string name="action_fairy_rev">Reverse</string>
+    <string name="action_fairy_init">Reset</string>
+    <string name="current_fairy_changed_in_next">※ Fairy will be changed after current BattleView/QuestView ends.</string>
+    <string name="setting_menu_kand_title_adv_network">Advanced Network Settings</string>
+    <string name="setting_menu_kand_warn_adv_network">Warning: Setting these incorrectly may make VPN Service unusable. Don\'t change these options unless you know what you are doing! You need to restart VPN Service to make these options effective.</string>
+    <string name="setting_menu_kand_title_socks5_enable">Enable SOCKS5 Proxy</string>
+    <string name="setting_menu_kand_title_socks5_allapps">Use proxy for all applications</string>
+    <string name="setting_menu_kand_title_socks5_address">SOCKS5 Proxy Address</string>
+    <string name="setting_menu_kand_title_socks5_port">SOCKS5 Proxy Port</string>
+    <string name="setting_menu_kand_title_socks5_username">Username (optional)</string>
+    <string name="setting_menu_kand_title_socks5_password">Password (optional)</string>
+    <string name="settings_menu_kand_title_bypass_address">Bypass Addresses</string>
+    <string name="setting_menu_kand_desc_bypass_address">Use CIDR to describe bypass addresses, separate each CIDR by a comma.</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="setting_menu_kand_title_record_droplog">Record Drop Log</string>
     <string name="setting_menu_kand_title_record_resourcelog">Record Resource Log</string>
     <string name="setting_menu_kand_title_fleetview_button_order">FleetView Menu Order</string>
@@ -195,6 +309,11 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="record_storage_warning">Takes up some of device\'s storage space.</string>
 
     <string name="setting_menu_view_head">Permission/Function Settings</string>
+<<<<<<< HEAD
+=======
+    <string name="setting_menu_view_title_accessibility_setting">Accessibility Settings</string>
+    <string name="setting_menu_view_desc_accessibility_setting">Select Kcanotify from Services. (required for detect kancolle app)</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="setting_menu_view_title_overlay_setting">Screen Overlay Settings</string>
     <string name="setting_menu_view_desc_overlay_setting">Set Screen Overlay Permission (required for BattleView).</string>
     <string name="setting_menu_view_title_battlenode_use">Use Node Prediction</string>
@@ -203,7 +322,16 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="setting_menu_view_desc_battleview_use">Display battle results during sortie.</string>
     <string name="setting_menu_view_title_drop_visible">Show Drop Info</string>
     <string name="setting_menu_view_desc_drop_visible">Show dropped ship name in BattleView</string>
+<<<<<<< HEAD
     <string name="setting_menu_view_desc_hdmg_minlevel">Set 0 for all ships regardless of the level</string>
+=======
+    <string name="setting_menu_view_title_hdmg_locked">Check heavy damaged status ONLY for locked ships</string>
+    <string name="setting_menu_view_desc_hdmg_locked">Warning: heavy damaged alert will not work for unlocked ships!</string>
+    <string name="setting_menu_view_title_hdmg_minlevel">Minimal level for heavy damaged status alert</string>
+    <string name="setting_menu_view_desc_hdmg_minlevel">Set 0 for all ships regardless of the level</string>
+    <string name="setting_menu_view_title_questview_use">Use QuestView</string>
+    <string name="setting_menu_view_desc_questview_use">Display quest translation and information.</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="setting_menu_view_title_show_constrship">Show Name of Ship in Construction</string>
     <string name="setting_menu_view_desc_show_constrship">Display the name of the ship in construction by FleetView.</string>
     <string name="setting_menu_view_title_fix_view">FleetView/BattleView Drag Lock</string>
@@ -245,9 +373,28 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="setting_menu_app_head">Application Information</string>
     <string name="setting_menu_app_title_current">Current Version</string>
     <string name="setting_menu_app_title_updatecheckserver">Select Update Check Server</string>
+<<<<<<< HEAD
     <string name="setting_menu_app_title_down">APK Download Site</string>
     <string name="setting_menu_app_info">About kcanotify</string>
 
+=======
+    <string name="setting_menu_app_title_updatecheck">Check For Updates</string>
+    <string name="setting_menu_app_title_down">APK Download Site</string>
+    <string name="setting_menu_app_title_contact">Submit a Suggestion or Error Report</string>
+    <string name="setting_menu_app_desc_updatecheck" translatable="false">https://github.com/antest1/kcanotify/releases</string>
+    <string name="setting_menu_app_title_enable_acra">Use Crash Report System (ACRA)</string>
+    <string name="setting_menu_app_desc_enable_acra">Mail client will be open when crash occurs</string>
+    <string name="setting_menu_app_desc_contact">Send an E-mail to the developer</string>
+    <string name="setting_menu_app_desc_inspector">データベース/設定値を表示/初期化</string>
+    <string name="setting_menu_app_info">About kcanotify</string>
+
+    <string name="setting_menu_sniffer_title_head">Sniffer Settings</string>
+    <string name="setting_menu_sniffer_title_package_allow">Use Sniffer for Other Applications</string>
+    <string name="setting_menu_sniffer_title_extfilter_use">Use extended IP Filter</string>
+    <string name="setting_menu_sniffer_desc_package_allow">For users playing the KanColle with other browsers</string>
+    <string name="setting_menu_sniffer_desc_extfilter_use">Check this option if you are using web-proxy service like ooi.moe</string>
+
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <!-- BattleView Strings -->
     <string name="battleview_error">An error occurred while processing battle data.</string>
     <string name="battleview_menu_head">Menu</string>
@@ -284,6 +431,12 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="air_denial">AD</string>
     <string name="air_incapability">AI</string>
 
+<<<<<<< HEAD
+=======
+    <string name="air_supermacy_abbr">AS+</string>
+    <string name="air_superiority_abbr">AS</string>
+
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="enemy_fleet_name">Enemy Fleet</string>
     <string name="enemy_main_fleet_name">Enemy Main Fleet</string>
     <string name="enemy_combined_fleet_name">Enemy Support Fleet</string>
@@ -301,6 +454,14 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="rank_d">D</string>
     <string name="rank_e">E</string>
 
+<<<<<<< HEAD
+=======
+    <string name="maprank_1">C</string>
+    <string name="maprank_2">E</string>
+    <string name="maprank_3">N</string>
+    <string name="maprank_4">H</string>
+
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="item_fuel">Fuel</string>
     <string name="item_ammo">Ammo</string>
     <string name="item_stel">Steel</string>
@@ -322,6 +483,10 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="sound_kind_value_normal" translatable="false">sound</string>
     <string name="sound_kind_value_vibrate" translatable="false">vibrate</string>
     <string name="sound_kind_value_mute" translatable="false">mute</string>
+<<<<<<< HEAD
+=======
+    <string name="ma_permission_external_confirmed">Allow External Storage Permission: On</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="ma_permission_external_denied">Allow External Storage: Off (You can use only system notification sound. You cannot export error log.)</string>
     <string name="airbase_term">LBAS</string>
     <string name="contact_term">Contact</string>
@@ -341,18 +506,65 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
 
     <string name="lv_star" translatable="false">&#9733;</string>
 
+<<<<<<< HEAD
     <string name="alv_7" formatted="false" translatable="false">&#8811; 7</string>
     <string name="slot_empty">(No Equipment)</string>
+=======
+    <string name="alv_1" formatted="false" translatable="false">&#124; 1</string>
+    <string name="alv_2" formatted="false" translatable="false">&#124;&#124; 2</string>
+    <string name="alv_3" formatted="false" translatable="false">&#124;&#124;&#124; 3</string>
+    <string name="alv_4" formatted="false" translatable="false">&#92;&#92; 4</string>
+    <string name="alv_5" formatted="false" translatable="false">&#92;&#92;&#92;&#92; 5</string>
+    <string name="alv_6" formatted="false" translatable="false">&#92;&#92;&#92;&#92;&#92;&#92; 6</string>
+    <string name="alv_7" formatted="false" translatable="false">&#8811; 7</string>
+    <string name="slot_empty">(No Equipment)</string>
+    <string name="kca_view_condition_1" formatted="false">Morale #1: %s</string>
+    <string name="kca_view_condition_2" formatted="false">Morale #2: %s</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="not_supplied" formatted="false">Fleet %d is not supplied!</string>
     <string name="sound_kind_mixed">Sound+Vibrate</string>
     <string name="sound_kind_value_mixed" translatable="false">mixed</string>
     <string name="viewbutton_hide">Fairy: bye-bye!</string>
+<<<<<<< HEAD
+=======
+    <string name="fairy_hidden_notification_title">Fairy Hidden</string>
+    <string name="fairy_hidden_notification_text">Swipe down to select action</string>
+    <string name="fairy_hidden_notification_bigtext">select action</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="fairy_hidden_notification_action_return">Show Again</string>
     <string name="fairy_hidden_notification_action_remove">Remove</string>
     <string name="battleview_text_retreated">Retreated</string>
 
+<<<<<<< HEAD
     <string name="quest_label_type_100" formatted="false">Y%d</string>
 
+=======
+    <string name="quest_category_0" formatted="false" translatable="false">\?</string>
+    <string name="quest_category_1">A</string>
+    <string name="quest_category_2">B</string>
+    <string name="quest_category_3">C</string>
+    <string name="quest_category_4">D</string>
+    <string name="quest_category_5">E</string>
+    <string name="quest_category_6">F</string>
+    <string name="quest_category_7">G</string>
+    <string name="quest_category_8">SB</string>
+    <string name="quest_category_9">B</string>
+    <string name="quest_category_10">N</string>
+
+    <string name="quest_label_type_0" formatted="false" translatable="false">\?</string>
+    <string name="quest_label_type_1">O</string>
+    <string name="quest_label_type_2">D</string>
+    <string name="quest_label_type_3">W</string>
+    <string name="quest_label_type_4">_</string>
+    <string name="quest_label_type_5">_</string>
+    <string name="quest_label_type_6">M</string>
+    <string name="quest_label_type_7">S</string>
+    <string name="quest_label_type_100" formatted="false">Y%d</string>
+
+    <string name="quest_progress_1" translatable="false">50%</string>
+    <string name="quest_progress_2" translatable="false">80%</string>
+
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="quest_class_1">SRTI</string>
     <string name="quest_class_2">EXER</string>
     <string name="quest_class_3">EXPD</string>
@@ -400,6 +612,10 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="item_rocket_material">New Model Rocket Development Material</string>
     <string name="setting_menu_noti_title_notiatsvcoff">Enable notification when service is off</string>
     <string name="setting_menu_noti_desc_notiatsvcoff">Make expedition/docking notification available even if service is off</string>
+<<<<<<< HEAD
+=======
+    <string name="questview_nopage">No Quest</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <string name="action_fleetlist">Fleet Info</string>
     <string name="fleetlist_combined_fleet">Combined Fleet</string>
@@ -441,6 +657,12 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
 
     <string name="shipinfo_filt_list_dialog_title">Select</string>
     <string name="shipinfo_criteria_count" formatted="false">Applied criteria: %d</string>
+<<<<<<< HEAD
+=======
+    <string name="ship_exclude_label">Ship Status Filter</string>
+    <string name="ship_exclude_type1">Exclude ships in expedition</string>
+    <string name="ship_exclude_type2">Exclude ships in repair</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="ship_stat_equip_stype_label">Special Equipment Filter</string>
     <string name="ship_stat_equip_stype1">Daihatsu</string>
     <string name="ship_stat_equip_stype2">Amphibious Tank</string>
@@ -448,11 +670,34 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="ship_stat_equip_stype4">Command Facility</string>
     <string name="ship_stat_equip_stype5">Searchlight (L)</string>
 
+<<<<<<< HEAD
     <string name="ship_fleet_0">None</string>
 
     <string name="action_equipmentinfo">Equipment List</string>
     <string name="equipinfo_summary" formatted="false">Total %d (%d Equipped, %d Equippable)</string>
     <string name="equipinfo_filter">Filter</string>
+=======
+    <string name="ship_tag_0">None</string>
+    <string name="ship_tag_1">Pink Tag</string>
+    <string name="ship_tag_2">Cyan Tag</string>
+    <string name="ship_tag_3">Blue Tag</string>
+    <string name="ship_tag_4">Green Tag</string>
+    <string name="ship_tag_5">White Tag</string>
+    <string name="ship_tag_6">Orange Tag</string>
+
+    <string name="ship_fleet_0">None</string>
+
+    <string name="ship_hp_0">Normal</string>
+    <string name="ship_hp_1">Minor damage</string>
+    <string name="ship_hp_2">Moderate Damage</string>
+    <string name="ship_hp_3">Heavy Damage</string>
+
+    <string name="action_equipmentinfo">Equipment List</string>
+    <string name="equipinfo_summary" formatted="false">Total %d (%d Equipped, %d Equippable)</string>
+    <string name="equipinfo_filter">Filter</string>
+    <string name="equipinfo_search">Search</string>
+    <string name="equipinfo_search_hint">Search with the name</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <string name="action_expcalc">EXP Calculator</string>
     <string name="expcalc_shipname">Ship</string>
@@ -497,6 +742,10 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="droplog_label_level">Diff.</string>
     <string name="droplog_label_isboss">Boss</string>
     <string name="droplog_label_rank">Rank</string>
+<<<<<<< HEAD
+=======
+    <string name="droplog_item_label_no">No</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="droplog_item_label_time">Time</string>
     <string name="droplog_item_label_area">Area</string>
     <string name="droplog_item_label_isboss">B</string>
@@ -523,6 +772,10 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="reslog_interval_3day">3 day</string>
     <string name="reslog_interval_1week">1 week</string>
     <string name="reslog_interval_2week">2 week</string>
+<<<<<<< HEAD
+=======
+    <string name="reslog_interval_1month">1 month</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="reslog_interval_day">Day</string>
     <string name="reslog_interval_week">Week</string>
     <string name="reslog_interval_month">Month</string>
@@ -530,6 +783,22 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="reslog_label_consumable">Consumable</string>
     <string name="reslog_clear_dialog_message">Do you want to clear the whole resource log?</string>
 
+<<<<<<< HEAD
+=======
+    <string name="action_datasync">Data Sync</string>
+    <string name="datasync_quest_url" formatted="false" translatable="false">https://antest1.github.io/kcaqsync/</string>
+    <string name="datasync_quest_title">Quest Track Sync</string>
+    <string name="datasync_quest_code">CODE</string>
+    <string name="datasync_mode_add">addition</string>
+    <string name="datasync_mode_overwrite">overwrite</string>
+    <string name="datasync_quest_check">check</string>
+    <string name="datasync_quest_sync">sync</string>
+    <string name="datasync_quest_copy">copy</string>
+    <string name="datasync_current_label">Current Code</string>
+    <string name="datasync_success">Sync Success</string>
+    <string name="datasync_failed">Sync Failed</string>
+
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="fleetview_title">FleetView</string>
     <string name="fleetview_combined">CF</string>
     <string name="fleetview_switch_1">Fleet 1</string>
@@ -537,7 +806,13 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="fleetview_expview" formatted="false">[Now] %.2f / [Today] %.2f</string>
     <string name="fleetview_seekvalue_d" formatted="false">LoS: %d</string>
     <string name="fleetview_seekvalue_f" formatted="false">LoS: %.2f</string>
+<<<<<<< HEAD
     <string name="fleetview_condmark" translatable="false">●</string>
+=======
+    <string name="fleetview_contactvalue" formatted="false">T%s/S%s</string>
+    <string name="fleetview_condmark" translatable="false">●</string>
+    <string name="viewmenu_battle">Battle</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="viewmenu_excheck">Exped.</string>
     <string name="viewmenu_quest">Quest</string>
     <string name="viewmenu_akashi">Akashi</string>
@@ -598,9 +873,30 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="fleetcheckview_content_airbattle" formatted="false">Total Airstrike Power: %d ~ %d\n───────────────\nContact Success Chance\n[AS+] Trigger Chance: %.1f%%, Selection Chance: %.1f%%\n[AS] Trigger Chance: %.1f%%, Selection Chance: %.1f%%\n</string>
     <string name="fleetcheckview_btn_fuelbull">Consumption</string>
 
+<<<<<<< HEAD
     <string name="widget_timer_name">Kcanotify Timer Widget</string>
     <string name="fleet_format">Fleet %d</string>
 
+=======
+    <string name="fleetview_18spring_rice" formatted="false">R %02d</string>
+    <string name="fleetview_18spring_umeboshi" formatted="false">U %02d</string>
+    <string name="fleetview_18spring_nori" formatted="false">N %02d</string>
+    <string name="fleetview_18spring_tea" formatted="false">T %02d</string>
+
+    <string name="widget_timer_name">Kcanotify Timer Widget</string>
+    <string name="fleet_format">Fleet %d</string>
+
+    <string name="download_title">Update Available</string>
+    <string name="download_description_head">Kcanotify may not work when you do not update the data.</string>
+    <string name="download_appdata">App Data</string>
+    <string name="download_skip">SKIP</string>
+    <string name="download_gamedata">Game data</string>
+    <string name="download_questinfo">Quest information</string>
+    <string name="download_shipinfo">Ship translation</string>
+    <string name="download_iteminfo">Equipment translation</string>
+    <string name="download_akashi">Improvement arsenal chart</string>
+    <string name="download_fairy">Fairy-san</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="download_progress">Downloading...</string>
     <string name="download_reset">Initialize all resources</string>
     <string name="download_reset_message">Initializing app resource again.</string>
@@ -608,6 +904,13 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="download_setting_checkatstart">check update when start application</string>
     <string name="download_use_internal_data">use internal resources</string>
 
+<<<<<<< HEAD
+=======
+    <string name="packagefilter_count_format" formatted="false">Total Count: %d</string>
+    <string name="packagefilter_restart">You need to restart VPN Service to make these options effective.</string>
+    <string name="special_message">Jervis enjoying on a spring day</string>
+
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="action_export_kanmusu_list">kanmusu_list</string>
     <string name="shipinfo_export_title">Export to kanmusu_list</string>
     <string name="shipinfo_export_clipboard">Copy to Clipboard</string>
@@ -623,6 +926,7 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="action_export_fleetanalysis">fleetanalysis</string>
     <string name="equipinfo_export_title">Export to fleetanalysis</string>
     <string name="equipinfo_export_clipboard">Copy to Clipboard</string>
+<<<<<<< HEAD
     <string name="equipinfo_export_openpage">Open fleetanalysis Page</string><![CDATA[
 
 
@@ -644,11 +948,45 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
 
     ]]>
     <string name="text_api_houm2">ABM</string>
+=======
+    <string name="equipinfo_export_openpage">Open fleetanalysis Page</string>
+    <string name="equipinfo_export_openpage2">Open SeikuukenSimulator Page</string>
+
+
+    <string name="text_api_houg">FP</string>
+    <string name="text_api_raig">TP</string>
+    <string name="text_api_tyku">AA</string>
+    <string name="text_api_souk">AM</string>
+    <string name="text_api_tais">ASW</string>
+    <string name="text_api_houk">EVS</string>
+    <string name="text_api_saku">LOS</string>
+    <string name="text_api_houm">ACC</string>
+    <string name="text_api_baku">BOM</string>
+    <string name="text_api_leng">RNG</string>
+
+    <string name="text_api_leng_1">S</string>
+    <string name="text_api_leng_2">M</string>
+    <string name="text_api_leng_3">L</string>
+    <string name="text_api_leng_4">VL</string>
+
+    <string name="text_api_houm2">ABM</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <string name="text_api_houk2">INT</string>
     <string name="text_api_cost">COST</string>
     <string name="text_api_distance">DIST</string>
 
+<<<<<<< HEAD
     <string name="GTX_Contact">代理提供者：@许氏王朝天子\nQQ：1799411308\n群聊：736793663</string>
+=======
+    <string name="ask_to_dev">KanColle Equipment Master</string>
+    <string name="fleetview_fish_text" formatted="false">[Saury] %03d [Sardine] %03d</string>
+
+    <string name="fairy_size_value_1">Very Small</string>
+    <string name="fairy_size_value_2">Small</string>
+    <string name="fairy_size_value_3">Normal</string>
+    <string name="fairy_size_value_4">Large</string>
+    <string name="fairy_size_value_5">Very Large</string>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <string name="setting_menu_kand_title_host_proxy_enable">开启反向代理</string>
     <string name="setting_menu_kand_title_host_proxy_address">反向代理服务器IP</string>
@@ -657,6 +995,7 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="game_page_type_title">设定游戏页面</string>
     <string name="clear_cookie_start_summary">OOI模式时，如果电脑登录过，则需要清除Cookie才能启动游戏，否则会201猫</string>
     <string name="clear_cookie_start_title">清除Cookie启动游戏</string>
+<<<<<<< HEAD
 
     <string name="app_widget_name">Switch</string>
 
@@ -989,4 +1328,6 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
         <item>Proxy only</item>
 
     </string-array>
+=======
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 </resources>

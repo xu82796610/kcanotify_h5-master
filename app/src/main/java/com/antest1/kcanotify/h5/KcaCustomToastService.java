@@ -88,7 +88,11 @@ public class KcaCustomToastService extends Service {
             display.getSize(size);
             screenWidth = size.x;
             screenHeight = size.y;
+<<<<<<< HEAD
             Log.e("KCA", "w/h: " + screenWidth + " " + screenHeight);
+=======
+            Log.e("KCA", "w/h: " + String.valueOf(screenWidth) + " " + String.valueOf(screenHeight));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
             mManager = (WindowManager) getSystemService(WINDOW_SERVICE);
             mManager.addView(mView, mParams);
         }
@@ -159,7 +163,11 @@ public class KcaCustomToastService extends Service {
         display.getSize(size);
         screenWidth = size.x;
         screenHeight = size.y;
+<<<<<<< HEAD
         Log.e("KCA", "w/h: " + screenWidth + " " + screenHeight);
+=======
+        Log.e("KCA", "w/h: " + String.valueOf(screenWidth) + " " + String.valueOf(screenHeight));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
         if (mParams != null) {
             mParams.x = (screenWidth - popupWidth) / 2;

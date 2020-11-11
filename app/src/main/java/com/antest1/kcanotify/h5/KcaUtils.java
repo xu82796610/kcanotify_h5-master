@@ -62,7 +62,10 @@ import java.io.StringWriter;
 import java.lang.reflect.Field;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+<<<<<<< HEAD
 import java.nio.charset.StandardCharsets;
+=======
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 import java.security.InvalidKeyException;
 import java.security.Key;
 import java.security.KeyFactory;
@@ -720,7 +723,14 @@ public class KcaUtils {
             // Log.e("KCA", getStringFromException(e));
             return false;
         }
+<<<<<<< HEAD
         return bitmap != null;
+=======
+        if (bitmap == null) {
+            return false;
+        }
+        return true;
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     }
 
     public static Bitmap getFairyImageFromStorage(Context context, String name, KcaDBHelper helper) {
@@ -992,11 +1002,19 @@ public class KcaUtils {
 
         byte[] data_all = {};
         for (String item : value_list) {
+<<<<<<< HEAD
             byte[] item_byte = rsa.doFinal(item.getBytes(StandardCharsets.UTF_8));
             data_all = addAll(data_all, item_byte);
         }
 
         String result = Base64.encodeToString(rsa.doFinal(value.getBytes(StandardCharsets.UTF_8)), Base64.DEFAULT).replace("\n", "");
+=======
+            byte[] item_byte = rsa.doFinal(item.getBytes("utf-8"));
+            data_all = addAll(data_all, item_byte);
+        }
+
+        String result = Base64.encodeToString(rsa.doFinal(value.getBytes("utf-8")), Base64.DEFAULT).replace("\n", "");
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         return result;
     }
 

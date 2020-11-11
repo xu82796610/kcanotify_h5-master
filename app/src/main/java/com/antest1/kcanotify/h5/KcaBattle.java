@@ -289,9 +289,15 @@ public class KcaBattle {
             }
         }
 
+<<<<<<< HEAD
         Log.e("KCA", "nb-enemyCbCount " + enemyCbCount);
         Log.e("KCA", "nb-enemyCbSunkCount " + enemyCbSunkCount);
         Log.e("KCA", "nb-enemyCbGoodHealth " + enemyCbGoodHealth);
+=======
+        Log.e("KCA", "nb-enemyCbCount " + String.valueOf(enemyCbCount));
+        Log.e("KCA", "nb-enemyCbSunkCount " + String.valueOf(enemyCbSunkCount));
+        Log.e("KCA", "nb-enemyCbGoodHealth " + String.valueOf(enemyCbGoodHealth));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
         if (!enemyCbSunkIdx.contains(0) && enemyCbGoodHealth >= 2) {
             return false;
@@ -613,7 +619,12 @@ public class KcaBattle {
             for (int j = 0; j < target.size(); j++) {
                 int target_val = cnv(target.get(j));
                 int dmg_val = cnv(target_dmg.get(j));
+<<<<<<< HEAD
                 friend_cb_target_flag = combined_type == COMBINED_A && phase == 1;
+=======
+                friend_cb_target_flag = false;
+                if (combined_type == COMBINED_A && phase == 1) friend_cb_target_flag = true;
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                 if (combined_type == COMBINED_W && phase == 3) friend_cb_target_flag = true;
                 if (combined_type == 0 && target_val >= 6) friend_cb_target_flag = true;
 
@@ -794,7 +805,11 @@ public class KcaBattle {
                 ship_ke_combined = null;
 
                 int checkcbresult = checkCombinedHeavyDamagedExist();
+<<<<<<< HEAD
                 Log.e("KCA", "hd: " + checkcbresult);
+=======
+                Log.e("KCA", "hd: " + String.valueOf(checkcbresult));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                 damecon_used = new JsonArray();
 
                 currentMapArea = api_data.get("api_maparea_id").getAsInt();
@@ -1129,8 +1144,13 @@ public class KcaBattle {
                 if (url.equals(API_REQ_SORTIE_BATTLE_RESULT)) {
                     if (!isEndReached) {
                         checkresult = checkHeavyDamagedExist();
+<<<<<<< HEAD
                         Log.e("KCA", "CheckHeavyDamaged " + checkresult);
                         Log.e("KCA", String.valueOf(KcaApiData.checkUserItemMax()) + KcaApiData.checkUserShipMax());
+=======
+                        Log.e("KCA", "CheckHeavyDamaged " + String.valueOf(checkresult));
+                        Log.e("KCA", String.valueOf(KcaApiData.checkUserItemMax()) + String.valueOf(KcaApiData.checkUserShipMax()));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                         Log.e("KCA", String.valueOf(KcaApiData.checkUserPortEnough()));
 
                         JsonObject heavyDamagedInfo = new JsonObject();
@@ -1146,7 +1166,11 @@ public class KcaBattle {
 
                         if (isKeyExist(api_data, "api_escape_flag")) {
                             int api_escape_flag = api_data.get("api_escape_flag").getAsInt();
+<<<<<<< HEAD
                             Log.e("KCA", "api_escape_flag: " + api_escape_flag);
+=======
+                            Log.e("KCA", "api_escape_flag: " + String.valueOf(api_escape_flag));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                             if (api_escape_flag == 1) {
                                 escapedata = api_data.getAsJsonObject("api_escape");
                                 Log.e("KCA", "api_escape: " + escapedata.toString());
@@ -1838,7 +1862,11 @@ public class KcaBattle {
                 int checkresult = HD_NONE;
                 if (!isEndReached) {
                     checkresult = checkCombinedHeavyDamagedExist();
+<<<<<<< HEAD
                     Log.e("KCA", "CheckHeavyDamaged " + checkresult);
+=======
+                    Log.e("KCA", "CheckHeavyDamaged " + String.valueOf(checkresult));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     if (checkresult != HD_NONE) {
                         JsonObject heavyDamagedInfo = new JsonObject();
                         heavyDamagedInfo.addProperty("data", checkresult);
@@ -1852,7 +1880,11 @@ public class KcaBattle {
 
                     if (isKeyExist(api_data, "api_escape_flag")) {
                         int api_escape_flag = api_data.get("api_escape_flag").getAsInt();
+<<<<<<< HEAD
                         Log.e("KCA", "api_escape_flag: " + api_escape_flag);
+=======
+                        Log.e("KCA", "api_escape_flag: " + String.valueOf(api_escape_flag));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                         if (api_escape_flag == 1) {
                             escapedata = api_data.getAsJsonObject("api_escape");
                             Log.e("KCA", "api_escape: " + escapedata.toString());

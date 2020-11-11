@@ -184,7 +184,11 @@ public class KcaAkashiViewService extends Service {
                     }
                     mManager.addView(mView, mParams);
                 }
+<<<<<<< HEAD
                 Log.e("KCA", "show_akashiview_action " + setViewResult);
+=======
+                Log.e("KCA", "show_akashiview_action " + String.valueOf(setViewResult));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                 mView.setVisibility(View.VISIBLE);
             }
         }

@@ -306,7 +306,11 @@ public class KcaQuestTracker extends SQLiteOpenHelper {
 
     public void updateIdCountTracker(String id, int idx) {
         SQLiteDatabase db = this.getWritableDatabase();
+<<<<<<< HEAD
         Cursor c = db.rawQuery("SELECT KEY, CND" + idx + " from "
+=======
+        Cursor c = db.rawQuery("SELECT KEY, CND" + String.valueOf(idx) + " from "
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                 .concat(qt_table_name)
                 .concat(" WHERE KEY=? AND ACTIVE=1"), new String[]{id});
         if (c.moveToFirst()) {
@@ -858,7 +862,11 @@ public class KcaQuestTracker extends SQLiteOpenHelper {
             Log.e("KCA-QT", KcaUtils.format("%s -> %s %s %s", key, active, cond0, time));
             count += 1;
         }
+<<<<<<< HEAD
         Log.e("KCA-QT", "Total: " + count);
+=======
+        Log.e("KCA-QT", "Total: " + String.valueOf(count));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         c.close();
     }
 }

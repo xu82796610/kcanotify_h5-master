@@ -452,13 +452,21 @@ public class UpdateCheckActivity extends AppCompatActivity {
                         } else {
                             Toast.makeText(getApplicationContext(),
                                     getStringWithLocale(R.string.kca_toast_inconsistent_data),
+<<<<<<< HEAD
                                     Toast.LENGTH_LONG).show();
+=======
+                                    Toast.LENGTH_LONG).show();;
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                         }
                     }
                 } catch (Exception e) {
                     Toast.makeText(getApplicationContext(),
                             "Error: not valid data.",
+<<<<<<< HEAD
                             Toast.LENGTH_LONG).show();
+=======
+                            Toast.LENGTH_LONG).show();;
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     dbHelper.recordErrorLog(ERROR_TYPE_SETTING, "fairy_queue", "", "", getStringFromException(e));
                 }
             }
@@ -468,7 +476,11 @@ public class UpdateCheckActivity extends AppCompatActivity {
                 if (KcaUtils.checkOnline(getApplicationContext())) {
                     Toast.makeText(getApplicationContext(),
                             KcaUtils.format(getStringWithLocale(R.string.sa_getupdate_servererror), t.getMessage()),
+<<<<<<< HEAD
                             Toast.LENGTH_LONG).show();
+=======
+                            Toast.LENGTH_LONG).show();;
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     dbHelper.recordErrorLog(ERROR_TYPE_SETTING, "fairy_queue", "", "", t.getMessage());
                 }
             }

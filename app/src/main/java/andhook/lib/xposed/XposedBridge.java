@@ -35,7 +35,11 @@ public final class XposedBridge {
     private static final Object[] EMPTY_ARRAY = new Object[0];
 
     // built-in handlers
+<<<<<<< HEAD
     private static final ConcurrentHashMap<Member, AdditionalHookInfo> sHookedMethodInfos = new ConcurrentHashMap<Member, AdditionalHookInfo>();
+=======
+    private static final ConcurrentHashMap<Member, AdditionalHookInfo> sHookedMethodInfos = new ConcurrentHashMap<>();
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     static {
         AndHook.ensureNativeLibraryLoaded(null);
@@ -145,7 +149,11 @@ public final class XposedBridge {
     @SuppressWarnings("all")
     public static HashSet<XC_MethodHook.Unhook> hookAllMethods(final Class<?> hookClass,
                                                                final XC_MethodHook callback) {
+<<<<<<< HEAD
         final HashSet<XC_MethodHook.Unhook> unhooks = new HashSet<XC_MethodHook.Unhook>();
+=======
+        final HashSet<XC_MethodHook.Unhook> unhooks = new HashSet<>();
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         for (final Member method : hookClass.getDeclaredMethods())
             unhooks.add(hookMethod(method, callback));
         return unhooks;
@@ -165,7 +173,11 @@ public final class XposedBridge {
     public static HashSet<XC_MethodHook.Unhook> hookAllMethods(final Class<?> hookClass,
                                                                final String methodName,
                                                                final XC_MethodHook callback) {
+<<<<<<< HEAD
         final HashSet<XC_MethodHook.Unhook> unhooks = new HashSet<XC_MethodHook.Unhook>();
+=======
+        final HashSet<XC_MethodHook.Unhook> unhooks = new HashSet<>();
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         for (final Member method : hookClass.getDeclaredMethods())
             if (method.getName().equals(methodName))
                 unhooks.add(hookMethod(method, callback));
@@ -182,7 +194,11 @@ public final class XposedBridge {
     @SuppressWarnings("all")
     public static HashSet<XC_MethodHook.Unhook> hookAllConstructors(final Class<?> hookClass,
                                                                     final XC_MethodHook callback) {
+<<<<<<< HEAD
         final HashSet<XC_MethodHook.Unhook> unhooks = new HashSet<XC_MethodHook.Unhook>();
+=======
+        final HashSet<XC_MethodHook.Unhook> unhooks = new HashSet<>();
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         for (final Member constructor : hookClass.getDeclaredConstructors())
             unhooks.add(hookMethod(constructor, callback));
         return unhooks;
@@ -355,7 +371,11 @@ public final class XposedBridge {
         final Member method;
 
         private AdditionalHookInfo(final Member method, final int slot) {
+<<<<<<< HEAD
             this.callbacks = new CopyOnWriteSortedSet<XC_MethodHook>();
+=======
+            this.callbacks = new CopyOnWriteSortedSet<>();
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
             this.method = method;
             this.slot = slot;
         }

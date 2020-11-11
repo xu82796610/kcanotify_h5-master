@@ -10,6 +10,13 @@
         <item name="colorButtonNormal">@color/colorBtn</item>
     </style>
 
+<<<<<<< HEAD
+=======
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </style>
+
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <style name="TextAppearance.AppCompat.Button.Custom">
         <item name="android:textColor">@color/colorBtnText</item>
     </style>
@@ -38,6 +45,7 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
 
+<<<<<<< HEAD
     <style name="AppTheme.NoActionBar">
 
         <item name="windowActionBar">false</item>
@@ -61,4 +69,6 @@
 
     <style parent="ThemeOverlay.AppCompat.Light" name="AppTheme.PopupOverlay"/>
 
+=======
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 </resources>

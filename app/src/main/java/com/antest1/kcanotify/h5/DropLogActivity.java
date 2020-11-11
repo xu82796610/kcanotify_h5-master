@@ -123,7 +123,11 @@ public class DropLogActivity extends AppCompatActivity {
 
         maprank_info[0] = "-";
         for (int i = 1; i < maprank_info.length; i++) {
+<<<<<<< HEAD
             maprank_info[i] = getStringWithLocale(KcaUtils.getId("maprank_" + i, R.string.class));
+=======
+            maprank_info[i] = getStringWithLocale(KcaUtils.getId("maprank_" + String.valueOf(i), R.string.class));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         }
         KcaDropLogger.maprank_info = maprank_info;
         KcaDropLogger.ship_none = getStringWithLocale(R.string.droplog_ship_none);

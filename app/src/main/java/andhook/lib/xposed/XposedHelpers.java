@@ -34,11 +34,19 @@ import java.util.zip.ZipFile;
 @SuppressWarnings({"all", "WeakerAccess", "CaughtExceptionImmediatelyRethrown"})
 public final class XposedHelpers {
     private static final String LOGTAG = "XposedHelpers";
+<<<<<<< HEAD
     private static final HashMap<String, Field> fieldCache = new HashMap<String, Field>();
     private static final HashMap<String, Method> methodCache = new HashMap<String, Method>();
     private static final HashMap<String, Constructor<?>> constructorCache = new HashMap<String, Constructor<?>>();
     private static final WeakHashMap<Object, HashMap<String, Object>> additionalFields = new WeakHashMap<Object, HashMap<String, Object>>();
     private static final HashMap<String, ThreadLocal<AtomicInteger>> sMethodDepth = new HashMap<String, ThreadLocal<AtomicInteger>>();
+=======
+    private static final HashMap<String, Field> fieldCache = new HashMap<>();
+    private static final HashMap<String, Method> methodCache = new HashMap<>();
+    private static final HashMap<String, Constructor<?>> constructorCache = new HashMap<>();
+    private static final WeakHashMap<Object, HashMap<String, Object>> additionalFields = new WeakHashMap<>();
+    private static final HashMap<String, ThreadLocal<AtomicInteger>> sMethodDepth = new HashMap<>();
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     /**
      * Look up a class with the specified class loader.

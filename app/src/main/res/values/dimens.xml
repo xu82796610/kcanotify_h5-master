@@ -42,6 +42,10 @@
     <dimen name="battleview_hp_height">4dp</dimen>
     <dimen name="battleview_padding">8dp</dimen>
     <dimen name="battleview_nodeinfo_minwidth">72dp</dimen>
+<<<<<<< HEAD
+=======
+    <dimen name="battleview_nodeinfo_margin">20dp</dimen>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <dimen name="item_popup_icon_size">15dp</dimen>
     <dimen name="item_popup_text_size_large">11dp</dimen>
@@ -51,8 +55,17 @@
     <dimen name="button_size">72dp</dimen>
     <dimen name="button_select_size">48dp</dimen>
 
+<<<<<<< HEAD
     <dimen name="excheckview_text_tbutton">15dp</dimen>
     <dimen name="excheckview_text_statusarea">14dp</dimen>
+=======
+    <dimen name="text_description_medium">15dp</dimen>
+    <dimen name="text_description_small">12dp</dimen>
+
+    <dimen name="excheckview_text_tbutton">15dp</dimen>
+    <dimen name="excheckview_text_statusarea">14dp</dimen>
+    <dimen name="excheckview_text_cbutton">16dp</dimen>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <dimen name="excheckview_popup_width">240dp</dimen>
     <dimen name="excheckview_label_width">64dp</dimen>
 
@@ -60,6 +73,10 @@
     <dimen name="popup_text_normal">14dp</dimen>
     <dimen name="popup_text_small">12dp</dimen>
     <dimen name="popup_text_xsmall">10dp</dimen>
+<<<<<<< HEAD
+=======
+    <dimen name="popup_text_xxsmall">8dp</dimen>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <dimen name="popup_item_icon_size">22dp</dimen>
     <dimen name="popup_t2_width">250dp</dimen>
     <dimen name="popup_t3_width">300dp</dimen>
@@ -67,11 +84,16 @@
     <dimen name="popup_padding">6dp</dimen>
 
     <dimen name="aircombat_text_mid">11dp</dimen>
+<<<<<<< HEAD
+=======
+    <dimen name="aircombat_mid_width">100dp</dimen>
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <dimen name="toast_text_size">16dp</dimen>
     <dimen name="toast_margin_tb">4dp</dimen>
     <dimen name="toast_margin_se">12dp</dimen>
     <dimen name="toast_minwidth">72dp</dimen>
+<<<<<<< HEAD
 
     <dimen name="bypass_list_header_height">50dp</dimen>
 
@@ -92,5 +114,7 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
 
     <dimen name="nav_header_height">160dp</dimen>
+=======
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 </resources>
 

@@ -106,7 +106,11 @@ public class KcaPoiDBAPI {
             if (content.equals(ERROR_CODE)) {
                 Log.e("KCA", "KcaRequest Error: "+params[0]);
             } else {
+<<<<<<< HEAD
                 Log.e("KCA", "KcaRequest Responsed "+ content.length());
+=======
+                Log.e("KCA", "KcaRequest Responsed "+String.valueOf(content.length()));
+>>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
             }
             return content;
         }
