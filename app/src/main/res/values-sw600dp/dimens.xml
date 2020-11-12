@@ -42,10 +42,6 @@
     <dimen name="battleview_hp_height">6dp</dimen>
     <dimen name="battleview_padding">12dp</dimen>
     <dimen name="battleview_nodeinfo_minwidth">96dp</dimen>
-<<<<<<< HEAD
-=======
-    <dimen name="battleview_nodeinfo_margin">20dp</dimen>
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <dimen name="item_popup_icon_size">20dp</dimen>
     <dimen name="item_popup_text_size_large">16dp</dimen>
@@ -55,17 +51,8 @@
     <dimen name="button_size">96dp</dimen>
     <dimen name="button_select_size">72dp</dimen>
 
-<<<<<<< HEAD
     <dimen name="excheckview_text_tbutton">20dp</dimen>
     <dimen name="excheckview_text_statusarea">18dp</dimen>
-=======
-    <dimen name="text_description_medium">20dp</dimen>
-    <dimen name="text_description_small">15dp</dimen>
-
-    <dimen name="excheckview_text_tbutton">20dp</dimen>
-    <dimen name="excheckview_text_statusarea">18dp</dimen>
-    <dimen name="excheckview_text_cbutton">20dp</dimen>
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <dimen name="excheckview_popup_width">350dp</dimen>
     <dimen name="excheckview_label_width">96dp</dimen>
 
@@ -73,10 +60,6 @@
     <dimen name="popup_text_normal">20dp</dimen>
     <dimen name="popup_text_small">16dp</dimen>
     <dimen name="popup_text_xsmall">13dp</dimen>
-<<<<<<< HEAD
-=======
-    <dimen name="popup_text_xxsmall">10dp</dimen>
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     <dimen name="popup_item_icon_size">28dp</dimen>
     <dimen name="popup_t2_width">350dp</dimen>
     <dimen name="popup_t3_width">385dp</dimen>
@@ -85,10 +68,6 @@
 
 
     <dimen name="aircombat_text_mid">12dp</dimen>
-<<<<<<< HEAD
-=======
-    <dimen name="aircombat_mid_width">140dp</dimen>
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     <dimen name="toast_text_size">24dp</dimen>
     <dimen name="toast_margin_tb">6dp</dimen>

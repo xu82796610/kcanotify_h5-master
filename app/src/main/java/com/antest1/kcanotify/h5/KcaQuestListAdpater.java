@@ -82,11 +82,7 @@ public class KcaQuestListAdpater extends BaseAdapter {
         }
 
         JsonObject item = listViewItemList.get(position);
-<<<<<<< HEAD
         Log.e("KCA", position + " " + item.toString() );
-=======
-        Log.e("KCA", String.valueOf(position) + " " + item.toString() );
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         final ViewHolder holder = (ViewHolder) v.getTag();
 
         if (!item.has("api_no")) {
@@ -174,11 +170,7 @@ public class KcaQuestListAdpater extends BaseAdapter {
                 for (int n = 0; n < trackData.size(); n++) {
                     int cond = trackCond.get(n).getAsInt() - KcaQuestTracker.getInitialCondValue(api_no);
                     int val = trackData.get(n).getAsInt() - KcaQuestTracker.getInitialCondValue(api_no);
-<<<<<<< HEAD
                     Log.e("KCA-QV", api_no + " " + val + " " + cond);
-=======
-                    Log.e("KCA-QV", api_no + " " + String.valueOf(val) + " " + String.valueOf(cond));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     trackinfo_list.add(KcaUtils.format("%d/%d", Math.min(val, cond), cond));
                 }
                 if (trackinfo_list.size() > 0) {

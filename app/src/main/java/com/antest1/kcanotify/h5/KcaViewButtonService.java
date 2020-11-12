@@ -208,15 +208,7 @@ public class KcaViewButtonService extends Service {
                 @Override
                 public void onReceive(Context context, Intent intent) {
                     String s = intent.getStringExtra(KCA_MSG_DATA);
-<<<<<<< HEAD
                     taiha_status = s.contains("1");
-=======
-                    if (s.contains("1")) {
-                        taiha_status = true;
-                    } else {
-                        taiha_status = false;
-                    }
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     setFairyImage();
                     Log.e("KCA", "KCA_MSG_BATTLE_HDMG Received");
                 }
@@ -286,11 +278,7 @@ public class KcaViewButtonService extends Service {
             display.getSize(size);
             screenWidth = size.x;
             screenHeight = size.y;
-<<<<<<< HEAD
             Log.e("KCA", "w/h: " + screenWidth + " " + screenHeight);
-=======
-            Log.e("KCA", "w/h: " + String.valueOf(screenWidth) + " " + String.valueOf(screenHeight));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
             JsonObject locdata = null;
             String ori_prefix = getOrientationPrefix(getResources().getConfiguration().orientation);
@@ -681,11 +669,7 @@ public class KcaViewButtonService extends Service {
         display.getSize(size);
         screenWidth = size.x;
         screenHeight = size.y;
-<<<<<<< HEAD
         Log.e("KCA", "w/h: " + screenWidth + " " + screenHeight);
-=======
-        Log.e("KCA", "w/h: " + String.valueOf(screenWidth) + " " + String.valueOf(screenHeight));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
         JsonObject locdata = null;
         if (dbHelper != null) {

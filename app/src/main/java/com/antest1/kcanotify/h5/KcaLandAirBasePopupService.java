@@ -47,10 +47,6 @@ public class KcaLandAirBasePopupService extends Service {
     public final static String LAB_DATA_ACTION = "lab_data_action";
 
     private View mView, itemView;
-<<<<<<< HEAD
-=======
-    ;
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     private WindowManager mManager;
     private int screenWidth, screenHeight;
     private int popupWidth, popupHeight;
@@ -120,11 +116,7 @@ public class KcaLandAirBasePopupService extends Service {
             display.getSize(size);
             screenWidth = size.x;
             screenHeight = size.y;
-<<<<<<< HEAD
             Log.e("KCA", "w/h: " + screenWidth + " " + screenHeight);
-=======
-            Log.e("KCA", "w/h: " + String.valueOf(screenWidth) + " " + String.valueOf(screenHeight));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
             mParams.x = (screenWidth - popupWidth) / 2;
             mParams.y = (screenHeight - popupHeight) / 2;
@@ -515,11 +507,7 @@ public class KcaLandAirBasePopupService extends Service {
         display.getSize(size);
         screenWidth = size.x;
         screenHeight = size.y;
-<<<<<<< HEAD
         Log.e("KCA", "w/h: " + screenWidth + " " + screenHeight);
-=======
-        Log.e("KCA", "w/h: " + String.valueOf(screenWidth) + " " + String.valueOf(screenHeight));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
         if (mParams != null) {
             if (mParams.x < 0) mParams.x = 0;

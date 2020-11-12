@@ -420,11 +420,7 @@ public class KcaDBHelper extends SQLiteOpenHelper {
             }
         }
         int result = db.delete(slotitem_table_name, condition, null);
-<<<<<<< HEAD
         Log.e("KCA", condition + " " + result);
-=======
-        Log.e("KCA", condition + " " + String.valueOf(result));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     }
 
     public JsonArray getCurrentQuestList() {
@@ -435,11 +431,7 @@ public class KcaDBHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getReadableDatabase();
         JsonArray data = new JsonArray();
         Cursor c = db.rawQuery("SELECT KEY, VALUE FROM ".concat(questlist_table_name), null);
-<<<<<<< HEAD
         Log.e("KCA", "getCurrentQuestList: " + c.getCount());
-=======
-        Log.e("KCA", "getCurrentQuestList: " + String.valueOf(c.getCount()));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         while (c.moveToNext()) {
             boolean valid_flag = true;
             int quest_id = c.getInt(c.getColumnIndex("KEY"));
@@ -752,11 +744,7 @@ public class KcaDBHelper extends SQLiteOpenHelper {
             Log.e("KCA", KcaUtils.format("%s -> %s (%d)", key, value.substring(0, Math.min(50, value.length())), value.length()));
             count += 1;
         }
-<<<<<<< HEAD
         Log.e("KCA", "Total: " + count);
-=======
-        Log.e("KCA", "Total: " + String.valueOf(count));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         c.close();
     }
 
@@ -771,11 +759,7 @@ public class KcaDBHelper extends SQLiteOpenHelper {
             Log.e("KCA", KcaUtils.format("%s\t%s\t%s", key, value.substring(0, Math.min(50, value.length())), time));
             count += 1;
         }
-<<<<<<< HEAD
         Log.e("KCA", "Total: " + count);
-=======
-        Log.e("KCA", "Total: " + String.valueOf(count));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         c.close();
     }
 }

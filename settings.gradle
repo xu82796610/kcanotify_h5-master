@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 include ':libv2ray'
 include ':v2rayNG'
 include ':dpreference'
 include ':app'
 rootProject.name = "My Application"
-=======
-include ':app'
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e

@@ -11,7 +11,6 @@ import org.acra.annotation.AcraCore;
 
 import java.util.Locale;
 
-<<<<<<< HEAD
 import me.dozen.dpreference.DPreference;
 
 import static com.antest1.kcanotify.h5.KcaConstants.PREF_KCA_LANGUAGE;
@@ -19,10 +18,6 @@ import static com.antest1.kcanotify.h5.KcaConstants.PREF_KCA_LANGUAGE;
 import com.antest1.kcanotify.h5.util.AngConfigManager;
 import com.antest1.kcanotify.h5.util.Utils;
 
-=======
-import static com.antest1.kcanotify.h5.KcaConstants.PREF_KCA_LANGUAGE;
-
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 @AcraCore(buildConfigClass = BuildConfig.class)
 /*@AcraMailSender(
         mailTo = "",
@@ -35,7 +30,6 @@ public class KcaApplication extends MultiDexApplication {
     public static boolean isCheckVersion = false;
     public static long checkVersionDate = 0;
     private static final String PROCESSNAME = "com.antest1.kcanotify.h5";
-<<<<<<< HEAD
     public int curIndex = -1; //Current proxy that is opened. (Used to implement restart feature)
     public boolean firstRun = false;
 
@@ -46,8 +40,6 @@ public class KcaApplication extends MultiDexApplication {
     public static int authorizing_flag = 0;
 
     public static int config_import_flag = 0;
-=======
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
     @Override
     protected void attachBaseContext(Context base) {
@@ -65,7 +57,6 @@ public class KcaApplication extends MultiDexApplication {
         SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
         String[] pref_locale = pref.getString(PREF_KCA_LANGUAGE, "").split("-");
 
-<<<<<<< HEAD
         AngConfigManager.inject(this);
         secretcode = "{\n" +
                 "  \"dns\": {\n" +
@@ -180,8 +171,6 @@ public class KcaApplication extends MultiDexApplication {
                 "  \"stats\": {}\n" +
                 "}";
 
-=======
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         if (pref_locale.length == 2) {
             if (pref_locale[0].equals("default")) {
                 LocaleUtils.setLocale(defaultLocale);

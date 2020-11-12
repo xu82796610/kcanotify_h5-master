@@ -462,11 +462,7 @@ public class KcaShipListViewAdpater extends BaseAdapter {
                     l += 1;
                 }
 
-<<<<<<< HEAD
                 String postfix = (k != l) ? "." + (k + 1) : "";
-=======
-                String postfix = (k != l) ? "." + String.valueOf(k+1) : "";
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                 if (!ship_base.containsKey(baseId)) ship_base.put(baseId, new ArrayList<>());
                 ship_base.get(baseId).add(lv + postfix);
             }

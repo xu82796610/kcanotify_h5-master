@@ -370,13 +370,8 @@ public class KcaDeckInfo {
         boolean excludeflagexist = (exclude_flag != null);
         String[] decklist = deckid_list.split(",");
 
-<<<<<<< HEAD
         double[] stage1_prob_sum = {0.0, 0.0};
         double[] stage2_prob_sum = {0.0, 0.0};
-=======
-        double stage1_prob_sum[] = {0.0, 0.0};
-        double stage2_prob_sum[] = {0.0, 0.0};
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
 
         for (int n = 0; n < decklist.length; n++) {
             int deckid = Integer.parseInt(decklist[n]);

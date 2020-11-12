@@ -676,12 +676,7 @@ public class KcaFleetViewService extends Service {
                     mAfterY = event.getRawY();
                     break;
             }
-<<<<<<< HEAD
             return id != mView.findViewById(R.id.fleetview_shiparea).getId();
-=======
-            if (id == mView.findViewById(R.id.fleetview_shiparea).getId()) return false;
-            else return true;
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         }
     };
 
@@ -1078,11 +1073,7 @@ public class KcaFleetViewService extends Service {
                 int lv = 0;
                 int alv = -1;
                 if (onslot != null) {
-<<<<<<< HEAD
                     Log.e("KCA", "item_id: " + item_id);
-=======
-                    Log.e("KCA", "item_id: " + String.valueOf(item_id));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     kcItemData = getUserItemStatusById(item_id, "level,alv", "id,type,name");
                     if (kcItemData == null) continue;
                     Log.e("KCA", kcItemData.toString());
@@ -1113,11 +1104,7 @@ public class KcaFleetViewService extends Service {
                     int itemtype = kcItemData.getAsJsonArray("type").get(2).getAsInt();
                     if (isItemAircraft(itemtype)) {
                         onslot_count += 1;
-<<<<<<< HEAD
                         Log.e("KCA", "ID: " + itemtype);
-=======
-                        Log.e("KCA", "ID: " + String.valueOf(itemtype));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                         int nowSlotValue = onslot.get(i).getAsInt();
                         int maxSlotValue = maxslot.get(i).getAsInt();
                         ((TextView) itemView.findViewById(getId(KcaUtils.format("item%d_slot", i + 1), R.id.class)))

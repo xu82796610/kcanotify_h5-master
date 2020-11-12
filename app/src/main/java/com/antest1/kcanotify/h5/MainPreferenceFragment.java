@@ -112,11 +112,7 @@ public class MainPreferenceFragment extends PreferenceFragment implements Shared
     }
 
     public interface Callback {
-<<<<<<< HEAD
         void onNestedPreferenceSelected(int key);
-=======
-        public void onNestedPreferenceSelected(int key);
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
     }
 
     @Override

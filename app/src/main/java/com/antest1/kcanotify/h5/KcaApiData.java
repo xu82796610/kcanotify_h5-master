@@ -377,11 +377,7 @@ public class KcaApiData {
                 item_count = kcShipInitEquipCount.get(ship_id_str).getAsInt();
             }
             getItemCountInBattle += item_count;
-<<<<<<< HEAD
             Log.e("KCA", "addItemCountInBattle: +" + item_count);
-=======
-            Log.e("KCA", "addItemCountInBattle: +" + String.valueOf(item_count));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         } else {
             Log.e("KCA", "addItemCountInBattle: init data is null");
         }
@@ -1019,11 +1015,7 @@ public class KcaApiData {
                 return temp;
             }
         } else {
-<<<<<<< HEAD
             Log.e("KCA", id + " not in list");
-=======
-            Log.e("KCA", String.valueOf(id) + " not in list");
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
             return null;
         }
     }
@@ -1435,11 +1427,7 @@ public class KcaApiData {
             case AIR_INCAPABILITY:
                 return context.getString(R.string.air_incapability);
             default:
-<<<<<<< HEAD
                 Log.e("KCA", "Unknown Value: " + v);
-=======
-                Log.e("KCA", "Unknown Value: " + String.valueOf(v));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                 return "";
         }
     }

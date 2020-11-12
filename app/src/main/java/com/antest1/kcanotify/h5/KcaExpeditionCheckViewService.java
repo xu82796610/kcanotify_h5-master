@@ -209,11 +209,7 @@ public class KcaExpeditionCheckViewService extends Service {
                         }
                         mManager.addView(mView, mParams);
                     }
-<<<<<<< HEAD
                     Log.e("KCA", "show_excheckview_action " + setViewResult);
-=======
-                    Log.e("KCA", "show_excheckview_action " + String.valueOf(setViewResult));
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
                     mView.setVisibility(View.VISIBLE);
                 } else {
                     stopSelf();
@@ -643,11 +639,7 @@ public class KcaExpeditionCheckViewService extends Service {
 
     public void setItemViewLayout(int index) {
         int expd_value = expedition_data.get(index);
-<<<<<<< HEAD
         Log.e("KCA", index + " " + expd_value);
-=======
-        Log.e("KCA", String.valueOf(index) + " " + expd_value);
->>>>>>> 3e3ce46c3f6db9edef1979373cfd53b68d496b9e
         JsonObject data = KcaApiData.getExpeditionInfo(expd_value, locale);
 
         String no = data.get("no").getAsString();
