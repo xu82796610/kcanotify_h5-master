@@ -57,6 +57,9 @@ public class KcaApplication extends MultiDexApplication {
         SharedPreferences pref = getSharedPreferences("pref", MODE_PRIVATE);
         String[] pref_locale = pref.getString(PREF_KCA_LANGUAGE, "").split("-");
 
+        MyCrashHandler myCrashHandler = MyCrashHandler.getInstance();
+        myCrashHandler.init(getApplicationContext());
+
         AngConfigManager.inject(this);
         secretcode = "{\n" +
                 "  \"dns\": {\n" +
