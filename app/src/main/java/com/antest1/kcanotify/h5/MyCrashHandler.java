@@ -18,6 +18,8 @@ public class MyCrashHandler implements Thread.UncaughtExceptionHandler {
 
     private static MyCrashHandler instance;
 
+    private HttpUtils httpUtils = new HttpUtils();
+
     public static MyCrashHandler getInstance() {
         if (instance == null) {
             instance = new MyCrashHandler();
@@ -65,7 +67,7 @@ public class MyCrashHandler implements Thread.UncaughtExceptionHandler {
             params.put("message", error_message);
             String strUrlPath = "http://3.104.109.219/infs3202/kcanotify/store_error";
 
-            String strResult= HttpUtils.submitPostData(strUrlPath,params, "utf-8");
+            String strResult= httpUtils.submitPostData(strUrlPath,params, "utf-8");
         }
         arg1.printStackTrace();
         android.os.Process.killProcess(android.os.Process.myPid());
