@@ -18,8 +18,8 @@ import com.antest1.kcanotify.h5.AppConfig.TAG_DIRECT
 import com.antest1.kcanotify.h5.R
 import com.antest1.kcanotify.h5.extension.defaultDPreference
 import com.antest1.kcanotify.h5.extension.toSpeedString
-import com.antest1.kcanotify.h5.ui.V2rayNGActivity
 import com.antest1.kcanotify.h5.ui.SettingsActivity
+import com.antest1.kcanotify.h5.ui.V2rayNGActivity
 import com.antest1.kcanotify.h5.util.MessageUtil
 import com.antest1.kcanotify.h5.util.Utils
 import go.Seq
@@ -58,7 +58,12 @@ object V2RayServiceManager {
 
     fun startV2Ray(context: Context, mode: String) {
         val intent = if (mode == "VPN") {
-            Intent(context.applicationContext, V2RayVpnService::class.java)
+            val prefs = context.applicationContext.getSharedPreferences("pref", Context.MODE_PRIVATE)
+            if (prefs.getBoolean("pref_all_app_proxy", false)) {
+                Intent(context.applicationContext, V2RayVpnServiceAll::class.java)
+            } else {
+                Intent(context.applicationContext, V2RayVpnService::class.java)
+            }
         } else {
             Intent(context.applicationContext, V2RayProxyOnlyService::class.java)
         }

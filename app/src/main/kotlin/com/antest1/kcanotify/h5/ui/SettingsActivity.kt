@@ -28,6 +28,8 @@ class SettingsActivity : BaseActivity() {
         const val PREF_ROUTING_DOMAIN_STRATEGY = "pref_routing_domain_strategy"
         const val PREF_ROUTING_MODE = "pref_routing_mode"
         const val PREF_ROUTING_CUSTOM = "pref_routing_custom"
+
+        const val PREF_ALL_APP_PROXY = "pref_all_app_proxy"
 //        const val PREF_DONATE = "pref_donate"
         //        const val PREF_LICENSES = "pref_licenses"
 //        const val PREF_FEEDBACK = "pref_feedback"

@@ -38,6 +38,7 @@ import android.widget.Toast;
 import android.widget.ToggleButton;
 
 import com.antest1.kcanotify.h5.dto.AngConfig;
+import com.antest1.kcanotify.h5.service.V2RayVpnService;
 import com.antest1.kcanotify.h5.util.AngConfigManager;
 import com.antest1.kcanotify.h5.util.Utils;
 import com.antest1.kcanotify.h5.util.V2rayConfigUtil;
@@ -231,8 +232,10 @@ public class MainActivity<e> extends AppCompatActivity {
                     }
                 } else {
                     if(changeWebview){
+                        V2RayVpnService.prepare(getApplicationContext());
                         intent = new Intent(MainActivity.this, GameGTXActivity.class);
                     } else {
+                        V2RayVpnService.prepare(getApplicationContext());
                         intent = new Intent(MainActivity.this, GameGTXWebViewActivity.class);
                     }
                 }

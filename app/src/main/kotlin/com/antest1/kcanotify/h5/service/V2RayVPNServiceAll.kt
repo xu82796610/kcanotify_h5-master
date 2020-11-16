@@ -3,7 +3,6 @@ package com.antest1.kcanotify.h5.service
 import android.app.Service
 import android.content.Context
 import android.content.Intent
-import android.content.SharedPreferences
 import android.content.pm.PackageManager
 import android.net.*
 import android.os.Build
@@ -11,15 +10,12 @@ import android.os.ParcelFileDescriptor
 import android.os.StrictMode
 import android.support.annotation.RequiresApi
 import android.util.Log
-import android.widget.Button
 import com.antest1.kcanotify.h5.AppConfig
 import com.antest1.kcanotify.h5.R
 import com.antest1.kcanotify.h5.extension.defaultDPreference
 import com.antest1.kcanotify.h5.ui.PerAppProxyActivity
 import com.antest1.kcanotify.h5.ui.SettingsActivity
-import com.antest1.kcanotify.h5.util.AppManagerUtil.hasInternetPermission
 import com.antest1.kcanotify.h5.util.Utils
-import kotlinx.android.synthetic.main.activity_bypass_list.*
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -28,18 +24,18 @@ import java.lang.Short
 import java.lang.ref.SoftReference
 
 
-class V2RayVpnService : VpnService(), ServiceControl {
+class V2RayVpnServiceAll : VpnService(), ServiceControl {
     private lateinit var mInterface: ParcelFileDescriptor
 
     /**
-        * Unfortunately registerDefaultNetworkCallback is going to return our VPN interface: https://android.googlesource.com/platform/frameworks/base/+/dda156ab0c5d66ad82bdcf76cda07cbc0a9c8a2e
-        *
-        * This makes doing a requestNetwork with REQUEST necessary so that we don't get ALL possible networks that
-        * satisfies default network capabilities but only THE default network. Unfortunately we need to have
-        * android.permission.CHANGE_NETWORK_STATE to be able to call requestNetwork.
-        *
-        * Source: https://android.googlesource.com/platform/frameworks/base/+/2df4c7d/services/core/java/com/android/server/ConnectivityService.java#887
-        */
+     * Unfortunately registerDefaultNetworkCallback is going to return our VPN interface: https://android.googlesource.com/platform/frameworks/base/+/dda156ab0c5d66ad82bdcf76cda07cbc0a9c8a2e
+     *
+     * This makes doing a requestNetwork with REQUEST necessary so that we don't get ALL possible networks that
+     * satisfies default network capabilities but only THE default network. Unfortunately we need to have
+     * android.permission.CHANGE_NETWORK_STATE to be able to call requestNetwork.
+     *
+     * Source: https://android.googlesource.com/platform/frameworks/base/+/2df4c7d/services/core/java/com/android/server/ConnectivityService.java#887
+     */
     @delegate:RequiresApi(Build.VERSION_CODES.P)
     private val defaultNetworkRequest by lazy {
         NetworkRequest.Builder()
@@ -65,6 +61,8 @@ class V2RayVpnService : VpnService(), ServiceControl {
             }
         }
     }
+
+    private val prefs by lazy { getSharedPreferences("pref", Context.MODE_PRIVATE) }
 
     override fun onCreate() {
         super.onCreate()
@@ -128,9 +126,9 @@ class V2RayVpnService : VpnService(), ServiceControl {
 
         if(!enableLocalDns) {
             Utils.getRemoteDnsServers(defaultDPreference)
-                .forEach {
-                    builder.addDnsServer(it)
-                }
+                    .forEach {
+                        builder.addDnsServer(it)
+                    }
         }
 
         builder.setSession(defaultDPreference.getPrefString(AppConfig.PREF_CURR_CONFIG_NAME, ""))
@@ -149,15 +147,6 @@ class V2RayVpnService : VpnService(), ServiceControl {
                     //Logger.d(e)
                 }
             }
-        }
-
-        val pkgAppsList = this.packageManager.getInstalledPackages(PackageManager.GET_PERMISSIONS)
-
-        for (pkg in pkgAppsList) {
-            if (!pkg.hasInternetPermission && pkg.packageName != "android") continue
-
-            if (pkg.packageName == this.packageName)  continue
-            builder.addDisallowedApplication(pkg.packageName)
         }
 
         // Close the old interface since the parameters have been changed.

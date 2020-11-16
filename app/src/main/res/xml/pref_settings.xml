@@ -238,6 +238,11 @@
             android:key="png_to_webp_quality"
             android:summary="压图质量，0-100之间，默认80，大约可缩小80%-90%"
             android:title="压图质量" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_all_app_proxy"
+            android:summary="大许特别代理专用，允许全局代理"
+            android:title="开启全局代理" />
         <!--
         <Preference
         android:defaultValue=""

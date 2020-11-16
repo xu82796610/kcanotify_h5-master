@@ -146,10 +146,7 @@ class PerAppProxyActivity : BaseActivity() {
         }
         switch_per_app_proxy.isChecked = defaultDPreference.getPrefBoolean(SettingsActivity.PREF_PER_APP_PROXY, false)
 
-        switch_bypass_apps.setOnCheckedChangeListener { buttonView, isChecked ->
-            defaultDPreference.setPrefBoolean(PREF_BYPASS_APPS, isChecked)
-        }
-        switch_bypass_apps.isChecked = defaultDPreference.getPrefBoolean(PREF_BYPASS_APPS, false)
+        switch_bypass_apps.isChecked = true
 
         et_search.setOnEditorActionListener { v, actionId, event ->
             if (actionId == EditorInfo.IME_ACTION_SEARCH) {
@@ -259,7 +256,9 @@ class PerAppProxyActivity : BaseActivity() {
                             println(packageName)
                             return@block
                         }
+                        adapter?.blacklist!!.add(packageName)
                     }
+                    it.blacklist.remove(applicationContext.packageName)
                     it.notifyDataSetChanged()
                 }
             } else {
