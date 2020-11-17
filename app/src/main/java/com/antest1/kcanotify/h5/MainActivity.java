@@ -13,6 +13,7 @@ import android.graphics.PorterDuff;
 import android.net.VpnService;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
@@ -52,6 +53,7 @@ import com.pixplicity.htmlcompat.HtmlCompat;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -167,6 +169,21 @@ public class MainActivity<e> extends AppCompatActivity {
 
         Utils.INSTANCE.stopVService(this);
         importGTXConfig();
+
+        String logPath = Environment.getExternalStorageDirectory()
+                .getAbsolutePath()
+                + File.separator
+                + File.separator
+                + "错误日志Log";
+
+        try {
+            FileWriter fw = new FileWriter(logPath + File.separator
+                    + "myErrorlog.log", false);
+            fw.write("Cleaned.");
+            fw.close();
+        } catch (IOException e) {
+            Log.e("crash handler", "clean file failed...", e.getCause());
+        }
 
 //        downloader = KcaUtils.getInfoDownloader(getApplicationContext());
         kcIntent = getKcIntent(getApplicationContext());

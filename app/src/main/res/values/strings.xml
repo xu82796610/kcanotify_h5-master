@@ -1000,6 +1000,108 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="questview_next" translatable="false">NEXT</string>
     <string name="goback_left">Press LEFT button to escort the ship.</string>
 
+    <string name="quest_category_0" formatted="false" translatable="false">\?</string>
+    <string name="quest_category_1">A</string>
+    <string name="quest_category_2">B</string>
+    <string name="quest_category_3">C</string>
+    <string name="quest_category_4">D</string>
+    <string name="quest_category_5">E</string>
+    <string name="quest_category_6">F</string>
+    <string name="quest_category_7">G</string>
+    <string name="quest_category_8">SB</string>
+    <string name="quest_category_9">B</string>
+    <string name="quest_category_10">N</string>
+
+    <string name="quest_label_type_0" formatted="false" translatable="false">\?</string>
+    <string name="quest_label_type_1">O</string>
+    <string name="quest_label_type_2">D</string>
+    <string name="quest_label_type_3">W</string>
+    <string name="quest_label_type_4">_</string>
+    <string name="quest_label_type_5">_</string>
+    <string name="quest_label_type_6">M</string>
+    <string name="quest_label_type_7">S</string>
+
+    <string name="quest_progress_1" translatable="false">50%</string>
+    <string name="quest_progress_2" translatable="false">80%</string>
+
+    <string name="questview_nopage">No Quest</string>
+
+    <string name="ship_exclude_label">Ship Status Filter</string>
+    <string name="ship_exclude_type1">Exclude ships in expedition</string>
+    <string name="ship_exclude_type2">Exclude ships in repair</string>
+
+    <string name="ship_tag_0">None</string>
+    <string name="ship_tag_1">Pink Tag</string>
+    <string name="ship_tag_2">Cyan Tag</string>
+    <string name="ship_tag_3">Blue Tag</string>
+    <string name="ship_tag_4">Green Tag</string>
+    <string name="ship_tag_5">White Tag</string>
+    <string name="ship_tag_6">Orange Tag</string>
+
+    <string name="ship_hp_0">Normal</string>
+    <string name="ship_hp_1">Minor damage</string>
+    <string name="ship_hp_2">Moderate Damage</string>
+    <string name="ship_hp_3">Heavy Damage</string>
+
+    <string name="equipinfo_search">Search</string>
+    <string name="equipinfo_search_hint">Search with the name</string>
+
+    <string name="droplog_item_label_no">No</string>
+
+    <string name="reslog_interval_1month">1 month</string>
+
+    <string name="fleetview_contactvalue" formatted="false">T%s/S%s</string>
+    <string name="viewmenu_battle">Battle</string>
+
+    <string name="fleetview_18spring_rice" formatted="false">R %02d</string>
+    <string name="fleetview_18spring_umeboshi" formatted="false">U %02d</string>
+    <string name="fleetview_18spring_nori" formatted="false">N %02d</string>
+    <string name="fleetview_18spring_tea" formatted="false">T %02d</string>
+
+    <string name="download_title">Update Available</string>
+    <string name="download_description_head">Kcanotify may not work when you do not update the data.</string>
+    <string name="download_appdata">App Data</string>
+    <string name="download_skip">SKIP</string>
+    <string name="download_gamedata">Game data</string>
+    <string name="download_questinfo">Quest information</string>
+    <string name="download_shipinfo">Ship translation</string>
+    <string name="download_iteminfo">Equipment translation</string>
+    <string name="download_akashi">Improvement arsenal chart</string>
+    <string name="download_fairy">Fairy-san</string>
+
+    <string name="packagefilter_count_format" formatted="false">Total Count: %d</string>
+    <string name="packagefilter_restart">You need to restart VPN Service to make these options effective.</string>
+    <string name="special_message">Jervis enjoying on a spring day</string>
+
+    <string name="equipinfo_export_openpage2">Open SeikuukenSimulator Page</string>
+
+
+    <string name="text_api_houg">FP</string>
+    <string name="text_api_raig">TP</string>
+    <string name="text_api_tyku">AA</string>
+    <string name="text_api_souk">AM</string>
+    <string name="text_api_tais">ASW</string>
+    <string name="text_api_houk">EVS</string>
+    <string name="text_api_saku">LOS</string>
+    <string name="text_api_houm">ACC</string>
+    <string name="text_api_baku">BOM</string>
+    <string name="text_api_leng">RNG</string>
+
+    <string name="text_api_leng_1">S</string>
+    <string name="text_api_leng_2">M</string>
+    <string name="text_api_leng_3">L</string>
+    <string name="text_api_leng_4">VL</string>
+
+    <string name="ask_to_dev">KanColle Equipment Master</string>
+    <string name="fleetview_fish_text" formatted="false">[Saury] %03d [Sardine] %03d</string>
+
+    <string name="fairy_size_value_1">Very Small</string>
+    <string name="fairy_size_value_2">Small</string>
+    <string name="fairy_size_value_3">Normal</string>
+    <string name="fairy_size_value_4">Large</string>
+    <string name="fairy_size_value_5">Very Large</string>
+
+
 
     <string-array name="mode_entries">
 

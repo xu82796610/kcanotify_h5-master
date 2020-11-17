@@ -578,4 +578,111 @@
     <string name="text_api_houk2">영격</string>
     <string name="text_api_cost">배치비용</string>
     <string name="text_api_distance">행동반경</string>
+
+    <!--    fix merge problems-->
+    <string name="quest_category_1">편</string>
+    <string name="quest_category_2">출</string>
+    <string name="quest_category_3">연</string>
+    <string name="quest_category_4">원</string>
+    <string name="quest_category_5">보</string>
+    <string name="quest_category_6">공</string>
+    <string name="quest_category_7">개</string>
+    <string name="quest_category_8">출</string>
+    <string name="quest_category_9">출</string>
+    <string name="quest_category_10">타</string>
+
+    <string name="quest_label_type_1">단</string>
+    <string name="quest_label_type_2">일</string>
+    <string name="quest_label_type_3">주</string>
+    <string name="quest_label_type_4">_</string>
+    <string name="quest_label_type_5">_</string>
+    <string name="quest_label_type_6">월</string>
+    <string name="quest_label_type_7">타</string>
+
+    <string name="questview_nopage">임무 없음</string>
+
+    <string name="ship_exclude_label">함선 상태 필터</string>
+    <string name="ship_exclude_type1">원정중인 칸무스를 제외</string>
+    <string name="ship_exclude_type2">입거중인 칸무스를 제외</string>
+
+    <string name="ship_tag_0">없음</string>
+    <string name="ship_tag_1">공략호위대 (핑크색)</string>
+    <string name="ship_tag_2">공습부대 (하늘색)</string>
+    <string name="ship_tag_3">난인부대 (파란색)</string>
+    <string name="ship_tag_4">말레이부대 (녹색)</string>
+    <string name="ship_tag_5">초계부대 (흰색)</string>
+    <string name="ship_tag_6">결전부대 (주황색)</string>
+
+    <string name="ship_hp_0">건재</string>
+    <string name="ship_hp_1">소파</string>
+    <string name="ship_hp_2">중파</string>
+    <string name="ship_hp_3">대파</string>
+
+    <string name="equipinfo_search">검색</string>
+    <string name="equipinfo_search_hint">이름으로 검색</string>
+
+    <string name="droplog_item_label_no">No</string>
+
+    <string name="reslog_interval_1month">1개월</string>
+
+    <string name="action_datasync">데이터 동기화</string>
+    <string name="datasync_quest_title">임무 추적 동기화</string>
+    <string name="datasync_quest_code">코드</string>
+    <string name="datasync_mode_add">더하기</string>
+    <string name="datasync_mode_overwrite">덮어쓰기</string>
+    <string name="datasync_quest_check">확인</string>
+    <string name="datasync_quest_sync">동기화</string>
+    <string name="datasync_quest_copy">복사</string>
+    <string name="datasync_current_label">현재 코드</string>
+    <string name="datasync_success">동기화 성공</string>
+    <string name="datasync_failed">동기화 실패</string>
+
+    <string name="fleetview_contactvalue" formatted="false">T%s/S%s</string>
+    <string name="viewmenu_battle">전투</string>
+
+    <string name="fleetview_18spring_rice" formatted="false">쌀 %02d</string>
+    <string name="fleetview_18spring_umeboshi" formatted="false">매 %02d</string>
+    <string name="fleetview_18spring_nori" formatted="false">김 %02d</string>
+    <string name="fleetview_18spring_tea" formatted="false">차 %02d</string>
+
+    <string name="special_message">봄나들이 중인 저비스</string>
+
+    <string name="download_title">데이터 업데이트 가능</string>
+    <string name="download_description_head">업데이트하지 않을 시 어플리케이션이 정상 동작하지 않을 수 있습니다.</string>
+    <string name="download_appdata">앱 데이터</string>
+    <string name="download_skip">SKIP</string>
+    <string name="download_gamedata">게임데이터</string>
+    <string name="download_questinfo">임무정보</string>
+    <string name="download_shipinfo">함선번역</string>
+    <string name="download_iteminfo">장비번역</string>
+    <string name="download_akashi">개수공창</string>
+    <string name="download_fairy">요정님</string>
+
+    <string name="packagefilter_count_format" formatted="false">합계: %d</string>
+    <string name="packagefilter_restart">해당 설정을 적용하기 위해서는 VPN을 재시작하여야 합니다.</string>
+    <string name="equipinfo_export_openpage2">제공권 시뮬레이터 열기</string>
+
+    <string name="text_api_houg">화력</string>
+    <string name="text_api_raig">뇌장</string>
+    <string name="text_api_tyku">대공</string>
+    <string name="text_api_souk">장갑</string>
+    <string name="text_api_tais">대잠</string>
+    <string name="text_api_houk">회피</string>
+    <string name="text_api_saku">색적</string>
+    <string name="text_api_houm">명중</string>
+    <string name="text_api_baku">폭장</string>
+    <string name="text_api_leng">사거리</string>
+
+    <string name="text_api_leng_1">단</string>
+    <string name="text_api_leng_2">중</string>
+    <string name="text_api_leng_3">장</string>
+    <string name="text_api_leng_4">초장</string>
+
+    <string name="ask_to_dev">칸코레 장비왕</string>
+    <string name="fleetview_fish_text" formatted="false">[꽁치] %03d [정어리] %03d</string>
+    <string name="fairy_size_value_4">크게</string>
+    <string name="fairy_size_value_5">매우 크게</string>
+    <string name="fairy_size_value_3">보통</string>
+    <string name="fairy_size_value_2">작게</string>
+    <string name="fairy_size_value_1">매우 작게</string>
 </resources>

@@ -582,4 +582,111 @@ https://github.com/antest1/kcanotify/blob/master/app/src/main/res/values/strings
     <string name="text_api_houk2">迎擊</string>
     <string name="text_api_cost">配置費用</string>
     <string name="text_api_distance">行動半徑</string>
+
+    <!--    fix merge problem-->
+    <string name="quest_category_1">編</string>
+    <string name="quest_category_2">出</string>
+    <string name="quest_category_3">演</string>
+    <string name="quest_category_4">遠</string>
+    <string name="quest_category_5">補</string>
+    <string name="quest_category_6">工</string>
+    <string name="quest_category_7">改</string>
+    <string name="quest_category_8">出</string>
+    <string name="quest_category_9">出</string>
+    <string name="quest_category_10">他</string>
+
+    <string name="quest_label_type_1">單</string>
+    <string name="quest_label_type_2">日</string>
+    <string name="quest_label_type_3">周</string>
+    <string name="quest_label_type_4">_</string>
+    <string name="quest_label_type_5">_</string>
+    <string name="quest_label_type_6">月</string>
+    <string name="quest_label_type_7">他</string>
+
+    <string name="questview_nopage">沒有任務</string>
+
+    <string name="ship_exclude_label">船艦狀態篩選</string>
+    <string name="ship_exclude_type1">遠征中的船艦除外</string>
+    <string name="ship_exclude_type2">維修中的船艦除外</string>
+
+    <string name="ship_tag_0">沒有</string>
+    <string name="ship_tag_1">攻略護衛隊（粉色）</string>
+    <string name="ship_tag_2">空襲部隊（淺藍）</string>
+    <string name="ship_tag_3">蘭印部隊（藍色）</string>
+    <string name="ship_tag_4">馬來部隊 (綠色)</string>
+    <string name="ship_tag_5">哨戒部隊 (白色)</string>
+    <string name="ship_tag_6">決戦部隊 (橙色)</string>
+
+    <string name="ship_hp_0">健在</string>
+    <string name="ship_hp_1">小破</string>
+    <string name="ship_hp_2">中破</string>
+    <string name="ship_hp_3">大破</string>
+
+    <string name="equipinfo_search">檢索</string>
+    <string name="equipinfo_search_hint">按名稱搜索</string>
+
+    <string name="droplog_item_label_no">數</string>
+
+    <string name="reslog_interval_1month">1個月</string>
+
+    <string name="action_datasync">數據同步</string>
+    <string name="datasync_quest_title">任務計數器同步</string>
+    <string name="datasync_quest_code">編碼</string>
+    <string name="datasync_mode_add">加成</string>
+    <string name="datasync_mode_overwrite">覆蓋</string>
+    <string name="datasync_quest_check">檢查</string>
+    <string name="datasync_quest_sync">同步</string>
+    <string name="datasync_quest_copy">複製</string>
+    <string name="datasync_current_label">現在編碼</string>
+    <string name="datasync_success">同步成功</string>
+    <string name="datasync_failed">同步失敗</string>
+
+    <string name="viewmenu_battle">戰鬥</string>
+
+    <string name="fleetview_18spring_rice" formatted="false">米 %02d</string>
+    <string name="fleetview_18spring_umeboshi" formatted="false">梅 %02d</string>
+    <string name="fleetview_18spring_nori" formatted="false">苔 %02d</string>
+    <string name="fleetview_18spring_tea" formatted="false">茶 %02d</string>
+
+    <string name="special_message">享受春日的傑維斯</string>
+
+    <string name="download_title">存在可用更新</string>
+    <string name="download_description_head">若果不更新資料，Kcanotify可能無法正常運作。</string>
+    <string name="download_appdata">應用資料</string>
+    <string name="download_skip">跳過</string>
+    <string name="download_gamedata">遊戲資料</string>
+    <string name="download_questinfo">任務資訊</string>
+    <string name="download_shipinfo">船艦翻譯</string>
+    <string name="download_iteminfo">裝備翻譯 </string>
+    <string name="download_akashi">改修工廠</string>
+    <string name="download_fairy">妖精醬~</string>
+
+    <string name="packagefilter_count_format" formatted="false">總計：%d</string>
+    <string name="packagefilter_restart">更改設定後妳需要重新啟用VPN來使設定生效</string>
+    <string name="equipinfo_export_openpage2">開啟制空權模擬器</string>
+
+    <string name="text_api_houg">火力</string>
+    <string name="text_api_raig">雷裝</string>
+    <string name="text_api_tyku">對空</string>
+    <string name="text_api_souk">裝甲</string>
+    <string name="text_api_tais">對潛</string>
+    <string name="text_api_houk">迴避</string>
+    <string name="text_api_saku">索敵</string>
+    <string name="text_api_houm">命中</string>
+    <string name="text_api_baku">爆裝</string>
+    <string name="text_api_leng">射程</string>
+
+    <string name="text_api_leng_1">短</string>
+    <string name="text_api_leng_2">中</string>
+    <string name="text_api_leng_3">長</string>
+    <string name="text_api_leng_4">超長</string>
+
+    <string name="ask_to_dev">艦これ 装備王</string>
+    <string name="fleetview_fish_text" formatted="false">[秋刀魚] %03d [沙丁魚] %03d</string>
+    <string name="fairy_size_value_4">大</string>
+    <string name="fairy_size_value_3">中</string>
+    <string name="fairy_size_value_2">小</string>
+    <string name="fairy_size_value_5">特大</string>
+    <string name="fairy_size_value_1">特小</string>
+
 </resources>

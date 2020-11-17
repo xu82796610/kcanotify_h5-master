@@ -1,6 +1,10 @@
 package com.antest1.kcanotify.h5.util;
 
+import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
@@ -9,14 +13,62 @@ import java.net.MalformedURLException;
 import java.net.ProtocolException;
 import java.net.URL;
 import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.HashMap;
 import java.util.Map;
+import android.os.Environment;
+import android.util.Log;
 
 public class HttpUtils {
+
+    public static void uploadToServer() {
+        Map<String,String> params = new HashMap<String,String>();
+
+        String strNowDateTime=getNowDateTime("yyyy-MM-dd|HH:mm:ss");//当前时间
+
+        String logPath = Environment.getExternalStorageDirectory()
+                .getAbsolutePath()
+                + File.separator
+                + File.separator
+                + "错误日志Log";
+
+        File f=new File(logPath,"myErrorlog.log");
+        StringBuilder log=new StringBuilder();
+        try{
+            BufferedReader r=new BufferedReader(new FileReader(f));
+            String line;
+            while((line=r.readLine())!=null)
+            {
+                log.append(line);
+                log.append("\n");
+            }
+            r.close();
+        }
+        catch(IOException e){}
+
+        String error_message = log.toString();
+        params.put("time", strNowDateTime);
+        params.put("message", error_message);
+        String strUrlPath = "http://3.104.109.219/infs3202/kcanotify/store_error";
+
+        String strResult= HttpUtils.submitPostData(strUrlPath,params, "utf-8");
+
+    }
+
+    private static String getNowDateTime(String strFormat){
+        if(strFormat==""){
+            strFormat="yyyy-MM-dd HH:mm:ss";
+        }
+        Date now = new Date();
+        SimpleDateFormat df = new SimpleDateFormat(strFormat);//设置日期格式
+        return df.format(now); // new Date()为获取当前系统时间
+    }
     /*
      * Function  :   发送Post请求到服务器
      * Param     :   params请求体内容，encode编码格式
      */
-    public String submitPostData(String strUrlPath, Map<String, String> params, String encode) {
+    public static String submitPostData(String strUrlPath, Map<String, String> params, String encode) {
 
         byte[] data = getRequestData(params, encode).toString().getBytes();//获得请求体
         try {

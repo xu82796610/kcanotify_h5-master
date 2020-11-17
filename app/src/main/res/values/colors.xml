@@ -213,4 +213,64 @@
 
     <color name="colorPing">#185534</color>
 
+    <!--    fix merge problems-->
+    <color name="colorQuestViewMemo">#64b5f6</color>
+    <color name="colorQuestCategory0">#616161</color>
+    <color name="colorQuestCategory2">#d50000</color>
+    <color name="colorQuestCategory3">#6bc613</color>
+    <color name="colorQuestCategory4">#60c1d4</color>
+    <color name="colorQuestCategory5">#c7b623</color>
+    <color name="colorQuestCategory6">#6d4c41</color>
+    <color name="colorQuestCategory7">#af85e8</color>
+    <color name="colorQuestCategory8">#d50000</color>
+    <color name="colorQuestCategory9">#d50000</color>
+    <color name="colorQuestCategory10">#757575</color>
+
+    <color name="colorQuestLabel0">#616161</color>
+    <color name="colorQuestLabel1">#fbc02e</color>
+    <color name="colorQuestLabel2">#6ebbf6</color>
+    <color name="colorQuestLabel3">#77dde9</color>
+    <color name="colorQuestLabel4">#616161</color>
+    <color name="colorQuestLabel5">#616161</color>
+    <color name="colorQuestLabel6">#b5dd60</color>
+    <color name="colorQuestLabel7">#f98c27</color>
+    <color name="colorQuestLabel100">#3F51B5</color>
+
+    <color name="colorQuestProgress1">#6bc613</color>
+
+    <color name="colorQuestState0">#e0e0e0</color>
+    <color name="colorQuestState1">#ffffff</color>
+    <color name="colorQuestState2">#f98c27</color>
+    <color name="colorQuestState3">#4fc3f7</color>
+
+    <color name="colorQuestCheckedTrue">#69f0ae</color>
+    <color name="colorQuestCheckedFalse">#ff8a80</color>
+
+    <color name="colorFleetInfoHeavyDamaged">#ff0000</color>
+
+    <color name="colorFleetInfoHeavyDamagedBtn">#d50000</color>
+    <color name="colorFleetAirStatBtn">#303f9f</color>
+
+    <color name="colorStatSallyArea3">#8C9EFF</color>
+    <color name="colorStatSallyArea4">#80D8FF</color>
+    <color name="colorStatSallyArea5">#B9F6CA</color>
+    <color name="colorStatSallyArea6">#CCFF90</color>
+    <color name="colorStatSallyArea7">#F4FF81</color>
+    <color name="colorStatSallyArea8">#FFD180</color>
+    <color name="colorStatSallyArea9">#FF9E80</color>
+    <color name="colorStatSallyArea10">#B6B6B6</color>
+
+    <color name="colorExpeditionTable99">#e53935</color>
+
+    <color name="colorEventRice">#dfd7c5</color>
+    <color name="colorEventNori">#ddc8e3</color>
+    <color name="colorEventUmeboshi">#ffbcb7</color>
+    <color name="colorEventTea">#d4ffd8</color>
+
+    <color name="colorGunfit0">#e57373</color>
+    <color name="colorGunfit1">#ffcdd2</color>
+    <color name="colorGunfit2">#f5f5f5</color>
+    <color name="colorGunfit3">#a7ffeb</color>
+    <color name="colorGunfit4">#1de9b6</color>
+
 </resources>
