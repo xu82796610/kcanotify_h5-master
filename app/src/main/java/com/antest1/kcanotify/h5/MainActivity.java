@@ -176,6 +176,11 @@ public class MainActivity<e> extends AppCompatActivity {
                 + File.separator
                 + "错误日志Log";
 
+        File file = new File(logPath);
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+
         try {
             FileWriter fw = new FileWriter(logPath + File.separator
                     + "myErrorlog.log", false);

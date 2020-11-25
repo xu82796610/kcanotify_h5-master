@@ -112,12 +112,12 @@ public class KcaApplication extends MultiDexApplication {
                 "      \"settings\": {\n" +
                 "        \"vnext\": [\n" +
                 "          {\n" +
-                "            \"address\": \"150.95.155.136\",\n" +
+                "            \"address\": \"133.130.88.56\",\n" +
                 "            \"port\": 8886,\n" +
                 "            \"users\": [\n" +
                 "              {\n" +
                 "                \"alterId\": 8,\n" +
-                "                \"id\": \"8374a0dc-1a54-4ce5-a7ca-7c05fbb52b05\",\n" +
+                "                \"id\": \"32437d19-404e-4c3d-a3ad-7b751f71735b\",\n" +
                 "                \"level\": 8,\n" +
                 "                \"security\": \"auto\"\n" +
                 "              }\n" +
